@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast component Should match snapshot 1`] = `
+<div>
+  <div
+    class="fixed z-[9999] right-5 top-5 flex items-center w-full max-w-xs p-4 pr-8 mb-4 rounded-lg bg-success-100"
+    data-testid="toast"
+    role="alert"
+  >
+    <p
+      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-background-100 overflow-visible whitespace-pre-wrap"
+    >
+      success!
+    </p>
+    <button
+      aria-label="Button"
+      class="z-0 group inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 h-10 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-transparent border-none min-w-3 min-h-5 rounded-full absolute top-[-2px] right-[-2px] text-background-100"
+      type="button"
+    >
+      <svg
+        class="w-[12px] h-[12px]"
+        fill="none"
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

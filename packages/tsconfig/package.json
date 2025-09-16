@@ -1,0 +1,13 @@
+{
+  "name": "@repo/tsconfig",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./base.json": "./base.json",
+    "./next.json": "./next.json",
+    "./vite-app.json": "./vite-app.json",
+    "./vite-node.json": "./vite-node.json"
+  }
+}
+
+

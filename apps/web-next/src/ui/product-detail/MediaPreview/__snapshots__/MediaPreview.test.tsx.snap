@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MediaPreview should match snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-4 lg:gap-[37px] h-full items-center"
+  >
+    <div
+      class="flex justify-center w-full xl:max-w-[587px] lg:max-w-[498px] lg:h-auto md:h-[525px] sm:h-[450px] h-[375px] rounded-[17px] overflow-hidden"
+    >
+      <img
+        alt="default4"
+        class="xl:h-[691px] lg:h-[600px] md:h-[525px] sm:h-[450px] h-[375px] rounded-[17px]"
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height="691"
+        src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=1200&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=1200&q=75 2x"
+        style="color: transparent; object-fit: cover;"
+        width="587"
+      />
+    </div>
+    <div
+      class="flex sm:hidden lg:gap-2.5 items-center gap-4"
+    >
+      <button
+        aria-label="Button Icon"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-background-100 border-none rounded-[100%] sm:min-w-[46px] sm:min-h-[46px] sm:p-[11px] p-0 min-w-6 min-h-6 w-6 h-6 text-default"
+        data-testid="btn-arrow-mobile-left"
+        type="button"
+      >
+        <svg
+          class="w-full h-full"
+          fill="none"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.75 4.5L8.25 12L15.75 19.5"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          />
+        </svg>
+        <span
+          class="nextui-ripple"
+          style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(0); opacity: 0.35; will-change: transform,opacity;"
+        />
+      </button>
+      <button
+        aria-label="Button Icon"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-background-100 border-none rounded-[100%] sm:min-w-[46px] sm:min-h-[46px] sm:p-[11px] p-0 min-w-6 min-h-6 w-6 h-6 text-default"
+        data-focus="true"
+        data-focus-visible="true"
+        data-testid="btn-arrow-mobile-right"
+        type="button"
+      >
+        <svg
+          class="w-full h-full"
+          fill="none"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.25 4.5L15.75 12L8.25 19.5"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          />
+        </svg>
+        <span
+          class="nextui-ripple"
+          style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(0); opacity: 0.35; will-change: transform,opacity;"
+        />
+      </button>
+    </div>
+    <div
+      class="hidden sm:flex lg:gap-2.5 items-center"
+    >
+      <button
+        aria-label="Button Icon"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-background-100 border-none rounded-[100%] sm:min-w-[46px] sm:min-h-[46px] sm:p-[11px] p-0 min-w-6 min-h-6 w-6 h-6 text-default xl:block lg:hidden"
+        data-testid="btn-arrow-left"
+        type="button"
+      >
+        <svg
+          class="w-full h-full"
+          fill="none"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.75 4.5L8.25 12L15.75 19.5"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          />
+        </svg>
+        <span
+          class="nextui-ripple"
+          style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(0); opacity: 0.35; will-change: transform,opacity;"
+        />
+      </button>
+      <div
+        class="sm:flex xl:gap-5 sm:gap-3"
+      >
+        <button
+          class="relative xl:h-[115px] xl:w-[115px] sm:h-[106px] sm:w-[106px] flex justify-center items-center rounded-[14px]"
+          data-testid="thumbnail-item-0"
+        >
+          <img
+            alt="default1"
+            class="w-full h-full p-[3px] rounded-[14px]"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="115"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
+            style="color: transparent; object-fit: cover;"
+            width="115"
+          />
+        </button>
+        <button
+          class="relative xl:h-[115px] xl:w-[115px] sm:h-[106px] sm:w-[106px] flex justify-center items-center rounded-[14px]"
+          data-testid="thumbnail-item-1"
+        >
+          <img
+            alt="default2"
+            class="w-full h-full p-[3px] rounded-[14px]"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="115"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
+            style="color: transparent; object-fit: cover;"
+            width="115"
+          />
+        </button>
+        <button
+          class="relative xl:h-[115px] xl:w-[115px] sm:h-[106px] sm:w-[106px] flex justify-center items-center rounded-[14px]"
+          data-testid="thumbnail-item-2"
+        >
+          <img
+            alt="default3"
+            class="w-full h-full p-[3px] rounded-[14px]"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="115"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
+            style="color: transparent; object-fit: cover;"
+            width="115"
+          />
+        </button>
+        <button
+          class="relative xl:h-[115px] xl:w-[115px] sm:h-[106px] sm:w-[106px] flex justify-center items-center rounded-[14px] bg-linear-blue dark:bg-linear-white"
+          data-testid="thumbnail-item-3"
+        >
+          <img
+            alt="default4"
+            class="w-full h-full p-[3px] rounded-[14px]"
+            data-nimg="1"
+            decoding="async"
+            fetchpriority="high"
+            height="115"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
+            style="color: transparent; object-fit: cover;"
+            width="115"
+          />
+        </button>
+      </div>
+      <button
+        aria-label="Button Icon"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-background-100 border-none rounded-[100%] sm:min-w-[46px] sm:min-h-[46px] sm:p-[11px] p-0 min-w-6 min-h-6 w-6 h-6 text-default xl:block lg:hidden"
+        data-testid="btn-arrow-right"
+        type="button"
+      >
+        <svg
+          class="w-full h-full"
+          fill="none"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.25 4.5L15.75 12L8.25 19.5"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          />
+        </svg>
+        <span
+          class="nextui-ripple"
+          style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(0); opacity: 0.35; will-change: transform,opacity;"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

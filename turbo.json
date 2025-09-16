@@ -1,0 +1,60 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "env": ["NODE_ENV", "PORT", "NEXT_PUBLIC_*", "VITE_*"]
+    },
+    "build": {
+      "dependsOn": ["^build", "type-check"],
+      "outputs": [".next/**", "storybook-static/**", "dist/**", "build/**"],
+      "env": ["NODE_ENV", "NEXT_PUBLIC_*", "VITE_*"],
+      "inputs": ["src/**", "public/**", "package.json", "tsconfig.json", "next.config.*", "vite.config.*", "tailwind.config.*", "postcss.config.*"]
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "outputs": [],
+      "inputs": ["src/**", "*.js", "*.ts", "*.tsx", ".eslintrc*", "eslint.config.*"]
+    },
+    "type-check": {
+      "dependsOn": ["^build"],
+      "outputs": [],
+      "inputs": ["src/**", "*.ts", "*.tsx", "tsconfig.json"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**", "test-results/**"],
+      "inputs": ["src/**", "test/**", "__tests__/**", "*.test.*", "*.spec.*", "jest.config.*", "vitest.config.*"]
+    },
+    "test:watch": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
+    },
+    "format": {
+      "outputs": [],
+      "inputs": ["**/*.{ts,tsx,js,jsx,json,md}", "prettier.config.*", ".prettierrc*"]
+    },
+    "format:check": {
+      "outputs": [],
+      "inputs": ["**/*.{ts,tsx,js,jsx,json,md}", "prettier.config.*", ".prettierrc*"]
+    },
+    "storybook": {
+      "cache": false,
+      "persistent": true,
+      "env": ["NODE_ENV"]
+    },
+    "build-storybook": {
+      "dependsOn": ["^build"],
+      "outputs": ["storybook-static/**"],
+      "inputs": ["src/**", ".storybook/**", "stories/**"]
+    }
+  },
+  "globalEnv": ["NODE_ENV"],
+  "globalPassThroughEnv": ["CI", "VERCEL", "NETLIFY"]
+}
+

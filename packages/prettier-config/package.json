@@ -1,0 +1,25 @@
+{
+  "name": "@repo/prettier-config",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./base": "./base.js",
+    "./next": "./next.js",
+    "./vite": "./vite.js",
+    "./vite.mjs": "./vite.mjs"
+  },
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "prettier-plugin-tailwindcss": "^0.6.14"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  }
+}

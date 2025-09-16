@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterList Component renders with default props 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-[30px] items-center max-w-[270px] "
+  >
+    <button
+      aria-label="Button"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover bg-background-100 w-full"
+      data-focus="true"
+      data-focus-visible="true"
+      data-testid="btn-toggle-filter"
+      type="button"
+    >
+      <div
+        class="flex justify-between w-full h-6"
+      >
+        <p
+          class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-secondary-200 text-xl font-medium leading-5"
+        >
+          Category
+        </p>
+        <div
+          class="flex"
+        >
+          <svg
+            class="w-3.5 mb-2 mr-0.5"
+            fill="none"
+            viewBox="0 0 12 7"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.375 5.3125L7 9.6875L2.625 5.3125"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <span
+        class="nextui-ripple"
+        style="position: absolute; background-color: currentColor; border-radius: 100%; transform-origin: center; pointer-events: none; overflow: hidden; inset: 0; z-index: 0; top: 0px; left: 0px; width: 0px; height: 0px; transform: scale(0); opacity: 0.35; will-change: transform,opacity;"
+      />
+    </button>
+  </div>
+</div>
+`;

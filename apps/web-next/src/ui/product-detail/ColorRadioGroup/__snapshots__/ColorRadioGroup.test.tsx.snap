@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorRadioGroup should render with default props 1`] = `
+<div>
+  <div
+    aria-label="Choose a Color"
+    aria-orientation="horizontal"
+    class="relative flex flex-col sm:gap-4 gap-2"
+    id="react-aria-:r0:"
+    role="radiogroup"
+  >
+    <span
+      class="relative text-base text-foreground-300 font-medium"
+    >
+      Choose a Color
+    </span>
+    <div
+      class="flex flex-col flex-wrap data-[orientation=horizontal]:flex-row sm:gap-4 gap-2"
+      data-orientation="horizontal"
+      role="presentation"
+    >
+      <label
+        aria-label="Radio Color"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-success-200 p-0"
+        data-selected="true"
+      >
+        <span
+          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+        >
+          <input
+            aria-describedby=":r9: react-aria-:r3:"
+            aria-label="Radio Color"
+            aria-labelledby=":r8:"
+            checked=""
+            name="react-aria-:r5:"
+            tabindex="0"
+            type="radio"
+            value="yellow green"
+          />
+        </span>
+        <span
+          aria-hidden="true"
+          class="relative items-center justify-center flex-shrink-0 overflow-hidden border-medium box-border border-default outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:border-primary group-data-[pressed=true]:scale-95 transition-transform-colors motion-reduce:transition-none inline-flex bg-success-200 group-data-[hover-unselected=true]:bg-success-200 sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] hover:opacity-80 p-0 m-0 cursor-pointer rounded-full border-none"
+        >
+          <span
+            class="z-10 opacity-0 scale-0 origin-center rounded-full group-data-[selected=true]:opacity-100 group-data-[selected=true]:scale-100 text-primary-foreground w-2 h-2 transition-transform-opacity motion-reduce:transition-none bg-background-100 hidden"
+          />
+        </span>
+        <div
+          class="flex flex-col ml-2 rtl:mr-2 rtl:ml-[unset] absolute sm:top-[19px] top-[16px] sm:left-[10px] left-[6px] sm:w-6 sm:h-5 w-5 h-4"
+        >
+          <span
+            class="relative text-foreground select-none text-medium transition-colors motion-reduce:transition-none"
+            id=":r8:"
+          >
+            <div>
+              <svg
+                class="text-background-100"
+                fill="none"
+                viewBox="0 0 24 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M23.2536 0.252736C23.8044 0.668905 23.9135 1.4528 23.4973 2.00361L10.7473 18.8786C10.5376 19.1563 10.2215 19.3339 9.87529 19.3688C9.52904 19.4037 9.18393 19.2926 8.92299 19.0624L0.422988 11.5624C-0.094667 11.1056 -0.144037 10.3157 0.312718 9.79804C0.769472 9.28039 1.55939 9.23102 2.07704 9.68777L9.56573 16.2954L21.5027 0.496529C21.9188 -0.0542836 22.7027 -0.163433 23.2536 0.252736Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </span>
+        </div>
+      </label>
+      <label
+        aria-label="Radio Color"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-background-100"
+      >
+        <span
+          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+        >
+          <input
+            aria-describedby=":rd: react-aria-:r3:"
+            aria-label="Radio Color"
+            aria-labelledby=":rc:"
+            name="react-aria-:r5:"
+            tabindex="-1"
+            type="radio"
+            value="violet"
+          />
+        </span>
+        <span
+          aria-hidden="true"
+          class="relative items-center justify-center flex-shrink-0 overflow-hidden border-medium box-border border-default outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:border-primary group-data-[pressed=true]:scale-95 transition-transform-colors motion-reduce:transition-none inline-flex bg-danger-200 group-data-[hover-unselected=true]:bg-danger-200 sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] hover:opacity-80 p-0 m-0 cursor-pointer rounded-full border-none"
+        >
+          <span
+            class="z-10 opacity-0 scale-0 origin-center rounded-full group-data-[selected=true]:opacity-100 group-data-[selected=true]:scale-100 text-primary-foreground w-2 h-2 transition-transform-opacity motion-reduce:transition-none bg-background-100 hidden"
+          />
+        </span>
+        <div
+          class="flex flex-col ml-2 rtl:mr-2 rtl:ml-[unset] absolute sm:top-[19px] top-[16px] sm:left-[10px] left-[6px] sm:w-6 sm:h-5 w-5 h-4"
+        />
+      </label>
+      <label
+        aria-label="Radio Color"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-background-100"
+      >
+        <span
+          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+        >
+          <input
+            aria-describedby=":rh: react-aria-:r3:"
+            aria-label="Radio Color"
+            aria-labelledby=":rg:"
+            name="react-aria-:r5:"
+            tabindex="-1"
+            type="radio"
+            value="wheat"
+          />
+        </span>
+        <span
+          aria-hidden="true"
+          class="relative items-center justify-center flex-shrink-0 overflow-hidden border-medium box-border border-default outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:border-primary group-data-[pressed=true]:scale-95 transition-transform-colors motion-reduce:transition-none inline-flex bg-warning-300 group-data-[hover-unselected=true]:bg-warning-300 sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] hover:opacity-80 p-0 m-0 cursor-pointer rounded-full border-none"
+        >
+          <span
+            class="z-10 opacity-0 scale-0 origin-center rounded-full group-data-[selected=true]:opacity-100 group-data-[selected=true]:scale-100 text-primary-foreground w-2 h-2 transition-transform-opacity motion-reduce:transition-none bg-background-100 hidden"
+          />
+        </span>
+        <div
+          class="flex flex-col ml-2 rtl:mr-2 rtl:ml-[unset] absolute sm:top-[19px] top-[16px] sm:left-[10px] left-[6px] sm:w-6 sm:h-5 w-5 h-4"
+        />
+      </label>
+      <label
+        aria-label="Radio Color"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-background-100"
+      >
+        <span
+          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+        >
+          <input
+            aria-describedby=":rl: react-aria-:r3:"
+            aria-label="Radio Color"
+            aria-labelledby=":rk:"
+            name="react-aria-:r5:"
+            tabindex="-1"
+            type="radio"
+            value="slate blue"
+          />
+        </span>
+        <span
+          aria-hidden="true"
+          class="relative items-center justify-center flex-shrink-0 overflow-hidden border-medium box-border border-default outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:border-primary group-data-[pressed=true]:scale-95 transition-transform-colors motion-reduce:transition-none inline-flex bg-secondary-400 group-data-[hover-unselected=true]:bg-secondary-400 sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] hover:opacity-80 p-0 m-0 cursor-pointer rounded-full border-none"
+        >
+          <span
+            class="z-10 opacity-0 scale-0 origin-center rounded-full group-data-[selected=true]:opacity-100 group-data-[selected=true]:scale-100 text-primary-foreground w-2 h-2 transition-transform-opacity motion-reduce:transition-none bg-background-100 hidden"
+          />
+        </span>
+        <div
+          class="flex flex-col ml-2 rtl:mr-2 rtl:ml-[unset] absolute sm:top-[19px] top-[16px] sm:left-[10px] left-[6px] sm:w-6 sm:h-5 w-5 h-4"
+        />
+      </label>
+      <label
+        aria-label="Radio Color"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-background-100"
+      >
+        <span
+          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+        >
+          <input
+            aria-describedby=":rp: react-aria-:r3:"
+            aria-label="Radio Color"
+            aria-labelledby=":ro:"
+            name="react-aria-:r5:"
+            tabindex="-1"
+            type="radio"
+            value="salmon - dark green"
+          />
+        </span>
+        <span
+          aria-hidden="true"
+          class="relative items-center justify-center flex-shrink-0 overflow-hidden border-medium box-border border-default group-data-[hover-unselected=true]:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:border-primary group-data-[pressed=true]:scale-95 transition-transform-colors motion-reduce:transition-none inline-flex bg-gradient-conic sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] hover:opacity-80 p-0 m-0 cursor-pointer rounded-full border-none"
+        >
+          <span
+            class="z-10 opacity-0 scale-0 origin-center rounded-full group-data-[selected=true]:opacity-100 group-data-[selected=true]:scale-100 text-primary-foreground w-2 h-2 transition-transform-opacity motion-reduce:transition-none bg-background-100 hidden"
+          />
+        </span>
+        <div
+          class="flex flex-col ml-2 rtl:mr-2 rtl:ml-[unset] absolute sm:top-[19px] top-[16px] sm:left-[10px] left-[6px] sm:w-6 sm:h-5 w-5 h-4"
+        />
+      </label>
+    </div>
+  </div>
+</div>
+`;

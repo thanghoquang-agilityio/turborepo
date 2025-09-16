@@ -1,0 +1,14 @@
+@media screen and (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-image {
+    width: 305px !important;
+    height: 270px;
+  }
+
+  .card-content {
+    flex-flow: row;
+  }
+}

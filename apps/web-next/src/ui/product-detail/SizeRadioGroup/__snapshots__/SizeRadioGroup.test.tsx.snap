@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SizeRadioGroup should render with default props 1`] = `
+<div>
+  <div
+    aria-label="Choose a Size"
+    aria-orientation="horizontal"
+    class="relative flex flex-col gap-4"
+    id="react-aria-:r0:"
+    role="radiogroup"
+  >
+    <span
+      class="relative text-base text-foreground-300 font-medium"
+    >
+      Choose a Size
+    </span>
+    <div
+      class="flex flex-col flex-wrap data-[orientation=horizontal]:flex-row gap-4"
+      data-orientation="horizontal"
+      role="presentation"
+    >
+      <label
+        class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 w-auto h-8 px-2.5 m-0 capitalize rounded-medium bg-background-300"
+        data-selected="true"
+      >
+        <span
+          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+        >
+          <input
+            aria-describedby=":r7: react-aria-:r3:"
+            aria-labelledby=":r6:"
+            checked=""
+            name="react-aria-:r5:"
+            tabindex="0"
+            type="radio"
+            value="Small"
+          />
+        </span>
+        <span
+          aria-hidden="true"
+          class="relative items-center justify-center flex-shrink-0 overflow-hidden border-solid box-border group-data-[hover-unselected=true]:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[pressed=true]:scale-95 transition-transform-colors motion-reduce:transition-none inline-flex hover:opacity-80 p-0 m-0 h-4 w-4 cursor-pointer border-small rounded-full border-foreground-100 group-data-[selected=true]:border-primary-300"
+        >
+          <span
+            class="z-10 opacity-0 scale-0 origin-center rounded-full group-data-[selected=true]:opacity-100 group-data-[selected=true]:scale-100 text-primary-foreground transition-transform-opacity motion-reduce:transition-none bg-primary-300 w-2.5 h-2.5"
+          />
+        </span>
+        <div
+          class="flex flex-col ml-2 rtl:mr-2 rtl:ml-[unset]"
+        >
+          <span
+            class="relative select-none transition-colors motion-reduce:transition-none text-sm font-medium text-primary-300"
+            id=":r6:"
+          >
+            Small
+          </span>
+        </div>
+      </label>
+      <label
+        class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 w-auto h-8 px-2.5 m-0 capitalize rounded-medium bg-background-200"
+      >
+        <span
+          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+        >
+          <input
+            aria-describedby=":r9: react-aria-:r3:"
+            aria-labelledby=":r8:"
+            name="react-aria-:r5:"
+            tabindex="-1"
+            type="radio"
+            value="Medium"
+          />
+        </span>
+        <span
+          aria-hidden="true"
+          class="relative items-center justify-center flex-shrink-0 overflow-hidden border-solid box-border group-data-[hover-unselected=true]:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[pressed=true]:scale-95 transition-transform-colors motion-reduce:transition-none inline-flex hover:opacity-80 p-0 m-0 h-4 w-4 cursor-pointer border-small rounded-full border-foreground-100 group-data-[selected=true]:border-primary-300"
+        >
+          <span
+            class="z-10 opacity-0 scale-0 origin-center rounded-full group-data-[selected=true]:opacity-100 group-data-[selected=true]:scale-100 text-primary-foreground transition-transform-opacity motion-reduce:transition-none bg-primary-300 w-2.5 h-2.5"
+          />
+        </span>
+        <div
+          class="flex flex-col ml-2 rtl:mr-2 rtl:ml-[unset]"
+        >
+          <span
+            class="relative select-none transition-colors motion-reduce:transition-none text-sm font-medium text-foreground-100"
+            id=":r8:"
+          >
+            Medium
+          </span>
+        </div>
+      </label>
+      <label
+        class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 opacity-disabled pointer-events-none w-auto h-8 px-2.5 m-0 capitalize rounded-medium bg-background-200"
+        data-disabled="true"
+      >
+        <span
+          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+        >
+          <input
+            aria-describedby=":rb: react-aria-:r3:"
+            aria-labelledby=":ra:"
+            disabled=""
+            name="react-aria-:r5:"
+            type="radio"
+            value="Large"
+          />
+        </span>
+        <span
+          aria-hidden="true"
+          class="relative items-center justify-center flex-shrink-0 overflow-hidden border-solid box-border group-data-[hover-unselected=true]:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[pressed=true]:scale-95 transition-transform-colors motion-reduce:transition-none inline-flex hover:opacity-80 p-0 m-0 h-4 w-4 cursor-pointer border-small rounded-full border-foreground-100 group-data-[selected=true]:border-primary-300"
+        >
+          <span
+            class="z-10 opacity-0 scale-0 origin-center rounded-full group-data-[selected=true]:opacity-100 group-data-[selected=true]:scale-100 text-primary-foreground transition-transform-opacity motion-reduce:transition-none bg-primary-300 w-2.5 h-2.5"
+          />
+        </span>
+        <div
+          class="flex flex-col ml-2 rtl:mr-2 rtl:ml-[unset]"
+        >
+          <span
+            class="relative select-none transition-colors motion-reduce:transition-none text-sm font-medium text-foreground-100"
+            id=":ra:"
+          >
+            Large
+          </span>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem should match snapshot 1`] = `
+<div>
+  <div
+    class="h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium transition-transform-background motion-reduce:transition-none card relative flex items-center flex-col max-w-[305px] pt-3 pb-5 border-medium border-background-300 rounded-large overflow-hidden"
+    tabindex="-1"
+  >
+    <button
+      aria-label="Button"
+      class="z-0 group inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 h-10 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-transparent border-none min-w-3 min-h-5 rounded-full absolute top-0 right-0 text-primary-300"
+      data-testid="button-close"
+      type="button"
+    >
+      <svg
+        class="w-[12px] h-[12px]"
+        fill="none"
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+    <p
+      class="text-primary-300 font-semibold  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-xl text-primary-400 max-w-[250px]"
+    >
+      Embrace Sideboard
+    </p>
+    <p
+      class="text-foreground-300 font-normal text-sm no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[250px] text-secondary-500 capitalize"
+    >
+      wheat
+       / 
+      small
+    </p>
+    <img
+      alt="E"
+      class="card-image w-[305px] h-[303px] mt-4 mb-5"
+      data-nimg="1"
+      decoding="async"
+      fetchpriority="high"
+      height="303"
+      src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.comundefined&w=640&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.comundefined&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.comundefined&w=640&q=75 2x"
+      style="color: transparent; object-fit: cover;"
+      width="305"
+    />
+    <div
+      class="flex w-[150px] justify-between p-2 h-[40px] rounded-[30px] bg-background-100 border-small border-background-300"
+    >
+      <button
+        aria-label="Button"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-transparent border-none min-w-3 min-h-5 rounded-full h-full text-primary-100"
+        data-testid="button-minus"
+        type="button"
+      >
+        <svg
+          class="w-[12px] h-[12px]"
+          fill="none"
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+      <p
+        class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-300 font-bold text-[20px] leading-[22px]"
+      >
+        2
+      </p>
+      <button
+        aria-label="Button"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-transparent border-none min-w-3 min-h-5 rounded-full h-full text-primary-100"
+        data-testid="button-plus"
+        type="button"
+      >
+        <svg
+          class="w-[12px] h-[12px]"
+          fill="none"
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="relative flex justify-between w-full mt-10 px-4 before:content-[''] before:absolute before:w-full before:border-t-small before:border-background-300 before:top-[-20px]"
+    >
+      <p
+        class="text-primary-200 dark:text-primary-300 font-semibold text-lg no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[100px]"
+      >
+        Subtotal
+      </p>
+      <p
+        class="text-primary-200 dark:text-primary-300 font-semibold text-lg no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[100px]"
+      >
+        $200
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,33 @@
+{
+  "name": "@repo/utils",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./cn": "./src/cn.ts",
+    "./format": "./src/format.ts",
+    "./validation": "./src/validation.ts",
+    "./api": "./src/api.ts",
+    "./constants": "./src/constants.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "clean": "rm -rf dist .turbo node_modules/.cache"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/tsconfig": "workspace:*",
+    "@types/node": "^20.0.0",
+    "eslint": "^9.35.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0"
+  }
+}

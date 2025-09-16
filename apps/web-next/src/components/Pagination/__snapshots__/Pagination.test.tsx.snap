@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination component Should match snapshot 1`] = `
+<div>
+  <div
+    class="w-full flex gap-2 justify-center md:justify-center items-center md:m-0"
+  >
+    <button
+      aria-label="Button"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 bg-background-100 text-primary-400 border-small border-background-200 dark:border-foreground-300 font-normal cursor-default"
+      disabled=""
+      type="button"
+    >
+      Previews
+    </button>
+    <button
+      aria-label="Page button 1"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover gap-2.5 font-semibold border-small border-background-200 dark:border-foreground-300 min-w-10 min-h-10 cursor-default bg-linear-purple dark:bg-linear-black-green disabled:text-primary-100"
+      disabled=""
+      type="button"
+    >
+      1
+    </button>
+    <button
+      aria-label="Page button 2"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold border-small border-background-200 dark:border-foreground-300 min-w-10 min-h-10 bg-background-100 text-primary-500"
+      type="button"
+    >
+      2
+    </button>
+    <button
+      aria-label="Button"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 bg-background-100 text-primary-400 border-small border-background-200 dark:border-foreground-300 font-normal"
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Pagination component Should match total count less than page size 1`] = `
+<div>
+  <div
+    class="w-full flex gap-2 justify-center md:justify-center items-center md:m-0"
+  >
+    <button
+      aria-label="Button"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 bg-background-100 text-primary-400 border-small border-background-200 dark:border-foreground-300 font-normal"
+      type="button"
+    >
+      Previews
+    </button>
+    <button
+      aria-label="Page button 1"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold border-small border-background-200 dark:border-foreground-300 min-w-10 min-h-10 bg-background-100 text-primary-500"
+      type="button"
+    >
+      1
+    </button>
+    <p
+      class="text-foreground-300 font-normal text-base no-underline text-ellipsis whitespace-nowrap overflow-hidden "
+    >
+      ...
+    </p>
+    <button
+      aria-label="Page button 4"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold border-small border-background-200 dark:border-foreground-300 min-w-10 min-h-10 bg-background-100 text-primary-500"
+      type="button"
+    >
+      4
+    </button>
+    <button
+      aria-label="Page button 5"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover gap-2.5 font-semibold border-small border-background-200 dark:border-foreground-300 min-w-10 min-h-10 cursor-default bg-linear-purple dark:bg-linear-black-green disabled:text-primary-100"
+      disabled=""
+      type="button"
+    >
+      5
+    </button>
+    <button
+      aria-label="Page button 6"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold border-small border-background-200 dark:border-foreground-300 min-w-10 min-h-10 bg-background-100 text-primary-500"
+      type="button"
+    >
+      6
+    </button>
+    <p
+      class="text-foreground-300 font-normal text-base no-underline text-ellipsis whitespace-nowrap overflow-hidden "
+    >
+      ...
+    </p>
+    <button
+      aria-label="Page button 10"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold border-small border-background-200 dark:border-foreground-300 min-w-10 min-h-10 bg-background-100 text-primary-500"
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Button"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 bg-background-100 text-primary-400 border-small border-background-200 dark:border-foreground-300 font-normal"
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;

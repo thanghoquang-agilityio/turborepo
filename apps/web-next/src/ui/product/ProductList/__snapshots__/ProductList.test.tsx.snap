@@ -1,0 +1,641 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList should match snapshot 1`] = `
+<div>
+  <div
+    class="container w-full max-w-full xl:py-16 lg:py-12 py-8 "
+  >
+    <div
+      class="w-full"
+    >
+      <div
+        class="flex sm:flex-row flex-col gap-4 items-center lg:justify-between justify-end xl:mb-12 mb-6"
+      >
+        <div
+          class="flex gap-3"
+        >
+          <div
+            class="group flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[160px] block"
+            data-filled="true"
+            data-slot="base"
+          >
+            <div
+              aria-hidden="true"
+              data-a11y-ignore="aria-hidden-focus"
+              data-testid="hidden-select-container"
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            >
+              <input
+                style="font-size: 16px;"
+                tabindex="-1"
+                type="text"
+                value=""
+              />
+              <label>
+                <select
+                  multiple=""
+                  size="4"
+                  tabindex="-1"
+                  title=""
+                >
+                  <option />
+                  <option
+                    value="Category-0"
+                  >
+                    Kid
+                  </option>
+                  <option
+                    value="Category-1"
+                  >
+                    Man
+                  </option>
+                  <option
+                    value="Category-2"
+                  >
+                    Woman
+                  </option>
+                  <option
+                    value="Category-3"
+                  >
+                    Sport
+                  </option>
+                </select>
+              </label>
+            </div>
+            <div
+              class="w-full flex flex-col"
+              data-slot="mainWrapper"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="Category"
+                aria-labelledby="react-aria-:r1v: react-aria-:r1q:"
+                class="relative gap-3 w-full inline-flex flex-row items-center shadow-sm tap-highlight-transparent bg-default-100 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-h-9 h-9 px-3.5 rounded-[28px]"
+                data-slot="trigger"
+                data-testid="Category"
+                id="react-aria-:r1q:"
+                type="button"
+              >
+                <div
+                  class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                  data-slot="innerWrapper"
+                >
+                  <span
+                    class="w-full text-left rtl:text-right truncate group-data-[has-value=true]:text-default-foreground text-primary-200 font-medium text-sm"
+                    data-slot="value"
+                    id="react-aria-:r1v:"
+                  >
+                    Category
+                  </span>
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                  data-slot="selectorIcon"
+                  fill="none"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[88px] lg:block hidden"
+            data-filled="true"
+            data-slot="base"
+          >
+            <div
+              aria-hidden="true"
+              data-a11y-ignore="aria-hidden-focus"
+              data-testid="hidden-select-container"
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            >
+              <input
+                disabled=""
+                style="font-size: 16px;"
+                tabindex="-1"
+                type="text"
+                value=""
+              />
+              <label>
+                <select
+                  disabled=""
+                  multiple=""
+                  tabindex="-1"
+                  title=""
+                >
+                  <option />
+                </select>
+              </label>
+            </div>
+            <div
+              class="w-full flex flex-col"
+              data-slot="mainWrapper"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="Price"
+                aria-labelledby="react-aria-:r27: react-aria-:r22:"
+                class="relative gap-3 w-full inline-flex flex-row items-center shadow-sm tap-highlight-transparent bg-default-100 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 pointer-events-none outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-h-9 h-9 px-3.5 rounded-[28px]"
+                data-disabled="true"
+                data-slot="trigger"
+                data-testid="Price"
+                id="react-aria-:r22:"
+                type="button"
+              >
+                <div
+                  class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                  data-slot="innerWrapper"
+                >
+                  <span
+                    class="w-full text-left rtl:text-right truncate group-data-[has-value=true]:text-default-foreground text-primary-200 font-medium text-sm"
+                    data-slot="value"
+                    id="react-aria-:r27:"
+                  >
+                    Price
+                  </span>
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                  data-slot="selectorIcon"
+                  fill="none"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[102px] lg:block hidden"
+            data-filled="true"
+            data-slot="base"
+          >
+            <div
+              aria-hidden="true"
+              data-a11y-ignore="aria-hidden-focus"
+              data-testid="hidden-select-container"
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            >
+              <input
+                disabled=""
+                style="font-size: 16px;"
+                tabindex="-1"
+                type="text"
+                value=""
+              />
+              <label>
+                <select
+                  disabled=""
+                  multiple=""
+                  tabindex="-1"
+                  title=""
+                >
+                  <option />
+                </select>
+              </label>
+            </div>
+            <div
+              class="w-full flex flex-col"
+              data-slot="mainWrapper"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="Review"
+                aria-labelledby="react-aria-:r2f: react-aria-:r2a:"
+                class="relative gap-3 w-full inline-flex flex-row items-center shadow-sm tap-highlight-transparent bg-default-100 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 pointer-events-none outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-h-9 h-9 px-3.5 rounded-[28px]"
+                data-disabled="true"
+                data-slot="trigger"
+                data-testid="Review"
+                id="react-aria-:r2a:"
+                type="button"
+              >
+                <div
+                  class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                  data-slot="innerWrapper"
+                >
+                  <span
+                    class="w-full text-left rtl:text-right truncate group-data-[has-value=true]:text-default-foreground text-primary-200 font-medium text-sm"
+                    data-slot="value"
+                    id="react-aria-:r2f:"
+                  >
+                    Review
+                  </span>
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                  data-slot="selectorIcon"
+                  fill="none"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[98px] lg:block hidden"
+            data-filled="true"
+            data-slot="base"
+          >
+            <div
+              aria-hidden="true"
+              data-a11y-ignore="aria-hidden-focus"
+              data-testid="hidden-select-container"
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            >
+              <input
+                disabled=""
+                style="font-size: 16px;"
+                tabindex="-1"
+                type="text"
+                value=""
+              />
+              <label>
+                <select
+                  disabled=""
+                  multiple=""
+                  tabindex="-1"
+                  title=""
+                >
+                  <option />
+                </select>
+              </label>
+            </div>
+            <div
+              class="w-full flex flex-col"
+              data-slot="mainWrapper"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="Color"
+                aria-labelledby="react-aria-:r2n: react-aria-:r2i:"
+                class="relative gap-3 w-full inline-flex flex-row items-center shadow-sm tap-highlight-transparent bg-default-100 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 pointer-events-none outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-h-9 h-9 px-3.5 rounded-[28px]"
+                data-disabled="true"
+                data-slot="trigger"
+                data-testid="Color"
+                id="react-aria-:r2i:"
+                type="button"
+              >
+                <div
+                  class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                  data-slot="innerWrapper"
+                >
+                  <span
+                    class="w-full text-left rtl:text-right truncate group-data-[has-value=true]:text-default-foreground text-primary-200 font-medium text-sm"
+                    data-slot="value"
+                    id="react-aria-:r2n:"
+                  >
+                    Color
+                  </span>
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                  data-slot="selectorIcon"
+                  fill="none"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[108px] lg:block hidden"
+            data-filled="true"
+            data-slot="base"
+          >
+            <div
+              aria-hidden="true"
+              data-a11y-ignore="aria-hidden-focus"
+              data-testid="hidden-select-container"
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            >
+              <input
+                disabled=""
+                style="font-size: 16px;"
+                tabindex="-1"
+                type="text"
+                value=""
+              />
+              <label>
+                <select
+                  disabled=""
+                  multiple=""
+                  tabindex="-1"
+                  title=""
+                >
+                  <option />
+                </select>
+              </label>
+            </div>
+            <div
+              class="w-full flex flex-col"
+              data-slot="mainWrapper"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="Material"
+                aria-labelledby="react-aria-:r2v: react-aria-:r2q:"
+                class="relative gap-3 w-full inline-flex flex-row items-center shadow-sm tap-highlight-transparent bg-default-100 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 pointer-events-none outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-h-9 h-9 px-3.5 rounded-[28px]"
+                data-disabled="true"
+                data-slot="trigger"
+                data-testid="Material"
+                id="react-aria-:r2q:"
+                type="button"
+              >
+                <div
+                  class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                  data-slot="innerWrapper"
+                >
+                  <span
+                    class="w-full text-left rtl:text-right truncate group-data-[has-value=true]:text-default-foreground text-primary-200 font-medium text-sm"
+                    data-slot="value"
+                    id="react-aria-:r2v:"
+                  >
+                    Material
+                  </span>
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                  data-slot="selectorIcon"
+                  fill="none"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[88px] lg:block hidden"
+            data-filled="true"
+            data-slot="base"
+          >
+            <div
+              aria-hidden="true"
+              data-a11y-ignore="aria-hidden-focus"
+              data-testid="hidden-select-container"
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            >
+              <input
+                disabled=""
+                style="font-size: 16px;"
+                tabindex="-1"
+                type="text"
+                value=""
+              />
+              <label>
+                <select
+                  disabled=""
+                  multiple=""
+                  tabindex="-1"
+                  title=""
+                >
+                  <option />
+                </select>
+              </label>
+            </div>
+            <div
+              class="w-full flex flex-col"
+              data-slot="mainWrapper"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="Offer"
+                aria-labelledby="react-aria-:r37: react-aria-:r32:"
+                class="relative gap-3 w-full inline-flex flex-row items-center shadow-sm tap-highlight-transparent bg-default-100 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 pointer-events-none outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-h-9 h-9 px-3.5 rounded-[28px]"
+                data-disabled="true"
+                data-slot="trigger"
+                data-testid="Offer"
+                id="react-aria-:r32:"
+                type="button"
+              >
+                <div
+                  class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                  data-slot="innerWrapper"
+                >
+                  <span
+                    class="w-full text-left rtl:text-right truncate group-data-[has-value=true]:text-default-foreground text-primary-200 font-medium text-sm"
+                    data-slot="value"
+                    id="react-aria-:r37:"
+                  >
+                    Offer
+                  </span>
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                  data-slot="selectorIcon"
+                  fill="none"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 text-primary-200 font-medium text-sm w-[166px] bg-background-100 border-small border-foreground-300 lg:block hidden"
+          data-filled="true"
+          data-slot="base"
+        >
+          <div
+            aria-hidden="true"
+            data-a11y-ignore="aria-hidden-focus"
+            data-testid="hidden-select-container"
+            style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+          >
+            <input
+              disabled=""
+              style="font-size: 16px;"
+              tabindex="-1"
+              type="text"
+              value=""
+            />
+            <label>
+              <select
+                disabled=""
+                multiple=""
+                tabindex="-1"
+                title=""
+              >
+                <option />
+              </select>
+            </label>
+          </div>
+          <div
+            class="w-full flex flex-col"
+            data-slot="mainWrapper"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Headphone type"
+              aria-labelledby="react-aria-:r3f: react-aria-:r3a:"
+              class="relative gap-3 w-full inline-flex flex-row items-center shadow-sm tap-highlight-transparent bg-default-100 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 pointer-events-none outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-h-9 h-9 px-3.5 rounded-[28px]"
+              data-disabled="true"
+              data-slot="trigger"
+              data-testid="Headphone type"
+              id="react-aria-:r3a:"
+              type="button"
+            >
+              <div
+                class="inline-flex h-full w-[calc(100%_-_theme(spacing.6))] min-h-4 items-center gap-1.5 box-border"
+                data-slot="innerWrapper"
+              >
+                <span
+                  class="w-full text-left rtl:text-right truncate group-data-[has-value=true]:text-default-foreground text-primary-200 font-medium text-sm"
+                  data-slot="value"
+                  id="react-aria-:r3f:"
+                >
+                  Headphone type
+                </span>
+              </div>
+              <svg
+                aria-hidden="true"
+                class="absolute right-3 rtl:left-3 rtl:right-[unset] w-4 h-4 transition-transform duration-150 ease motion-reduce:transition-none data-[open=true]:rotate-180"
+                data-slot="selectorIcon"
+                fill="none"
+                focusable="false"
+                height="1em"
+                role="presentation"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card-list grid grid-cols-2 gap-x-[20px] gap-y-[30px] mb-[110px] w-fit mx-auto 2xl:grid-cols-4 lg:grid-cols-3"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductList should match snapshot value error 1`] = `
+<div>
+  <div
+    class="container w-full max-w-full xl:py-16 lg:py-12 py-8 "
+  >
+    <div
+      class="w-full"
+    >
+      <div
+        class="flex sm:flex-row flex-col gap-4 items-center lg:justify-between justify-end xl:mb-12 mb-6"
+      >
+        <div
+          class="flex gap-3"
+        />
+      </div>
+      <div
+        class="flex flex-col min-h-[320px] h-[320px] gap-4 items-center justify-center"
+      >
+        <div
+          class="flex flex-col h-full gap-4 items-center justify-center"
+        >
+          <p
+            class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-300 font-bold md:text-5xl text-3xl md:leading-10 leading-[28px]"
+          >
+            Empty product
+          </p>
+          <a
+            class="mt-3"
+            href="/"
+          >
+            <button
+              aria-label="Button"
+              class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-primary-300 text-background-100 sm:py-4 sm:min-w-[136px] sm:h-12 sm:text-base sm:rounded-[50px] py-2 min-w-20 h-9 text-sm rounded-[30px]"
+              type="button"
+            >
+              Go Home
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

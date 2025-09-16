@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard should match snapshot 1`] = `
+<div>
+  <div
+    class="h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium transition-transform-background motion-reduce:transition-none card relative flex items-center flex-col max-w-[305px] border-medium border-background-300 rounded-large overflow-hidden"
+    tabindex="-1"
+  >
+    <button
+      aria-label="Button Icon"
+      class="z-0 group inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-background-100 border-none text-primary-500 rounded-[100%] sm:min-w-[46px] sm:min-h-[46px] sm:p-[11px] h-[30px] p-[7px] w-[30px] absolute top-3 right-2 min-w-[30px]"
+      type="button"
+    >
+      <svg
+        class="w-full h-full"
+        fill="none"
+        viewBox="0 0 26 26"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M22.1763 5.51296C21.652 4.98834 21.0294 4.57217 20.3441 4.28823C19.6588 4.0043 18.9244 3.85815 18.1826 3.85815C17.4408 3.85815 16.7064 4.0043 16.0211 4.28823C15.3358 4.57217 14.7132 4.98834 14.1889 5.51296L13.1006 6.60123L12.0123 5.51296C10.9531 4.45376 9.51654 3.8587 8.0186 3.8587C6.52066 3.8587 5.08407 4.45376 4.02486 5.51296C2.96566 6.57217 2.37061 8.00875 2.37061 9.50669C2.37061 11.0046 2.96566 12.4412 4.02486 13.5004L5.11313 14.5887L13.1006 22.5762L21.0881 14.5887L22.1763 13.5004C22.701 12.9761 23.1171 12.3535 23.4011 11.6682C23.685 10.9829 23.8311 10.2484 23.8311 9.50669C23.8311 8.76494 23.685 8.03045 23.4011 7.3452C23.1171 6.65994 22.701 6.03734 22.1763 5.51296V5.51296Z"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.156"
+        />
+      </svg>
+    </button>
+    <a
+      href="/products/1"
+    >
+      <img
+        alt="E"
+        class="card-image md:w-[305px] md:h-[303px] w-full"
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height="303"
+        src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com&w=640&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com&w=640&q=75 2x"
+        style="color: transparent; object-fit: cover;"
+        width="305"
+      />
+    </a>
+    <div
+      class="flex flex-col w-full gap-[5px] p-5 overflow-hidden"
+    >
+      <div
+        class="card-content flex md:flex-row flex-col justify-between"
+      >
+        <p
+          class="text-primary-300 font-semibold text-lg no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-400 max-w-[150px]"
+        >
+          Embrace Sideboard
+        </p>
+        <p
+          class="text-primary-200 dark:text-primary-300 font-semibold text-lg no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[100px]"
+        >
+          $53.00
+        </p>
+      </div>
+      <p
+        class="text-foreground-300 font-normal text-sm no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[263px] text-secondary-500"
+      >
+         types of shoos available
+      </p>
+      <div
+        class="flex mt-2 gap-2"
+      >
+        <div
+          class="flex h-[17px] gap-0.25 text-warning-200"
+        >
+          <svg
+            class="w-full h-full"
+            fill="none"
+            viewBox="0 0 16 15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.94562 0.371195C8.09111 0.0214042 8.58663 0.0214039 8.73211 0.371195L10.492 4.60253C10.5534 4.74999 10.692 4.85074 10.8512 4.86351L15.4193 5.22973C15.7969 5.26 15.9501 5.73127 15.6623 5.97772L12.182 8.95905C12.0607 9.06295 12.0077 9.22598 12.0447 9.38133L13.1081 13.839C13.196 14.2075 12.7951 14.4988 12.4718 14.3013L8.56087 11.9125C8.42457 11.8293 8.25316 11.8293 8.11686 11.9125L4.20595 14.3013C3.88265 14.4988 3.48177 14.2075 3.56967 13.839L4.63298 9.38133C4.67004 9.22598 4.61707 9.06295 4.49578 8.95905L1.01539 5.97773C0.727672 5.73127 0.880795 5.26 1.25842 5.22973L5.8265 4.86351C5.9857 4.85074 6.12438 4.74999 6.18571 4.60253L7.94562 0.371195Z"
+              fill="currentColor"
+            />
+          </svg>
+          <svg
+            class="w-full h-full"
+            fill="none"
+            viewBox="0 0 16 15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.94562 0.371195C8.09111 0.0214042 8.58663 0.0214039 8.73211 0.371195L10.492 4.60253C10.5534 4.74999 10.692 4.85074 10.8512 4.86351L15.4193 5.22973C15.7969 5.26 15.9501 5.73127 15.6623 5.97772L12.182 8.95905C12.0607 9.06295 12.0077 9.22598 12.0447 9.38133L13.1081 13.839C13.196 14.2075 12.7951 14.4988 12.4718 14.3013L8.56087 11.9125C8.42457 11.8293 8.25316 11.8293 8.11686 11.9125L4.20595 14.3013C3.88265 14.4988 3.48177 14.2075 3.56967 13.839L4.63298 9.38133C4.67004 9.22598 4.61707 9.06295 4.49578 8.95905L1.01539 5.97773C0.727672 5.73127 0.880795 5.26 1.25842 5.22973L5.8265 4.86351C5.9857 4.85074 6.12438 4.74999 6.18571 4.60253L7.94562 0.371195Z"
+              fill="currentColor"
+            />
+          </svg>
+          <svg
+            class="w-full h-full"
+            fill="none"
+            viewBox="0 0 16 15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.94562 0.371195C8.09111 0.0214042 8.58663 0.0214039 8.73211 0.371195L10.492 4.60253C10.5534 4.74999 10.692 4.85074 10.8512 4.86351L15.4193 5.22973C15.7969 5.26 15.9501 5.73127 15.6623 5.97772L12.182 8.95905C12.0607 9.06295 12.0077 9.22598 12.0447 9.38133L13.1081 13.839C13.196 14.2075 12.7951 14.4988 12.4718 14.3013L8.56087 11.9125C8.42457 11.8293 8.25316 11.8293 8.11686 11.9125L4.20595 14.3013C3.88265 14.4988 3.48177 14.2075 3.56967 13.839L4.63298 9.38133C4.67004 9.22598 4.61707 9.06295 4.49578 8.95905L1.01539 5.97773C0.727672 5.73127 0.880795 5.26 1.25842 5.22973L5.8265 4.86351C5.9857 4.85074 6.12438 4.74999 6.18571 4.60253L7.94562 0.371195Z"
+              fill="currentColor"
+            />
+          </svg>
+          <svg
+            class="w-full h-full"
+            fill="none"
+            viewBox="0 0 16 15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.94562 0.371195C8.09111 0.0214042 8.58663 0.0214039 8.73211 0.371195L10.492 4.60253C10.5534 4.74999 10.692 4.85074 10.8512 4.86351L15.4193 5.22973C15.7969 5.26 15.9501 5.73127 15.6623 5.97772L12.182 8.95905C12.0607 9.06295 12.0077 9.22598 12.0447 9.38133L13.1081 13.839C13.196 14.2075 12.7951 14.4988 12.4718 14.3013L8.56087 11.9125C8.42457 11.8293 8.25316 11.8293 8.11686 11.9125L4.20595 14.3013C3.88265 14.4988 3.48177 14.2075 3.56967 13.839L4.63298 9.38133C4.67004 9.22598 4.61707 9.06295 4.49578 8.95905L1.01539 5.97773C0.727672 5.73127 0.880795 5.26 1.25842 5.22973L5.8265 4.86351C5.9857 4.85074 6.12438 4.74999 6.18571 4.60253L7.94562 0.371195Z"
+              fill="currentColor"
+            />
+          </svg>
+          <svg
+            class="w-full h-full"
+            fill="none"
+            viewBox="0 0 16 15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.94562 0.371195C8.09111 0.0214042 8.58663 0.0214039 8.73211 0.371195L10.492 4.60253C10.5534 4.74999 10.692 4.85074 10.8512 4.86351L15.4193 5.22973C15.7969 5.26 15.9501 5.73127 15.6623 5.97772L12.182 8.95905C12.0607 9.06295 12.0077 9.22598 12.0447 9.38133L13.1081 13.839C13.196 14.2075 12.7951 14.4988 12.4718 14.3013L8.56087 11.9125C8.42457 11.8293 8.25316 11.8293 8.11686 11.9125L4.20595 14.3013C3.88265 14.4988 3.48177 14.2075 3.56967 13.839L4.63298 9.38133C4.67004 9.22598 4.61707 9.06295 4.49578 8.95905L1.01539 5.97773C0.727672 5.73127 0.880795 5.26 1.25842 5.22973L5.8265 4.86351C5.9857 4.85074 6.12438 4.74999 6.18571 4.60253L7.94562 0.371195Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <p
+          class="text-foreground-300 font-normal text-sm no-underline text-ellipsis whitespace-nowrap overflow-hidden text-secondary-500"
+        >
+          (
+          1
+          )
+        </p>
+      </div>
+    </div>
+    <div
+      class="card-content w-full flex md:flex-row flex-col md:justify-between items-end gap-3 mt-1 px-5 mb-6"
+    >
+      <button
+        aria-label="Add To Cart"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-primary-300 text-background-100 py-2 min-w-32 h-9 text-sm rounded-[30px] md:max-w-[128px] w-full"
+        data-testid="btn-add-to-cart"
+        type="button"
+      >
+        Add To Cart
+      </button>
+      <button
+        aria-label="Add Shortlist"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-background-100 text-primary-100 border-small border-foreground-300 py-2 min-w-32 h-9 text-sm rounded-[30px] md:max-w-[128px] w-full cursor-not-allowed"
+        type="button"
+      >
+        Add Shortlist
+      </button>
+    </div>
+  </div>
+</div>
+`;

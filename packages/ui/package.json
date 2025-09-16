@@ -1,0 +1,37 @@
+{
+  "name": "@repo/ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./button": "./src/button.tsx",
+    "./card": "./src/card.tsx",
+    "./input": "./src/input.tsx",
+    "./modal": "./src/modal.tsx",
+    "./cva": "./src/cva.ts",
+    "./styles": "./src/styles.css"
+  },
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src/",
+    "clean": "rm -rf dist .turbo node_modules/.cache"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/tsconfig": "workspace:*",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^9.35.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1"
+  }
+}

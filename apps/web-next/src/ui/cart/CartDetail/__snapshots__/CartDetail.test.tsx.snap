@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartDetail should match snapshot 1`] = `
+<div>
+  <div
+    class="container flex lg:flex-row flex-col gap-[40px] lg:items-start items-center w-full max-w-full xl:py-16 lg:py-12 py-8"
+  >
+    <div
+      class="card-list grid grid-cols-2 gap-x-[20px] gap-y-[30px] w-fit mx-auto 2xl:grid-cols-3"
+    />
+    <div
+      class="w-[305px]"
+    />
+  </div>
+</div>
+`;

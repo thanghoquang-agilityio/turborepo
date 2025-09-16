@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner should match snapshot 1`] = `
+<div>
+  <div
+    class="relative flex flex-col sm:items-start items-center bg-linear-purple dark:bg-linear-black-green 2xl:rounded-large rounded-none md:h-[287px] sm:h-[180px] md:gap-[44px] sm:gap-[22px] gap-4 lg:pt-[65px] md:pt-[50px] pt-[20px] lg:pl-[135px] sm:pl-[75px]"
+  >
+    <p
+      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-300 font-bold md:text-5xl text-2xl md:max-w-[377px] max-w-[261px] md:leading-10 whitespace-pre-wrap"
+    >
+      Grab Upto 50% Off On Selected Headphone
+    </p>
+    <div
+      class="flex items-center"
+    >
+      <button
+        aria-label="Buy Now"
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover gap-2.5 font-semibold bg-primary-300 text-background-100 sm:py-4 sm:min-w-[136px] sm:h-12 sm:text-base sm:rounded-[50px] py-2 min-w-20 h-9 text-sm rounded-[30px] max-w-[136px]"
+        type="button"
+      >
+        Buy Now
+      </button>
+      <img
+        alt="e"
+        class="sm:absolute top-[18px] lg:right-[178px] sm:right-[68px] md:w-[244px] md:h-[269px] sm:w-[146px] sm:h-[161px] w-[96px] h-[104px]"
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height="269"
+        src="http://localhost/_next/image?url=%2Fimages%2Fbanner-headphone.webp&w=640&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fbanner-headphone.webp&w=256&q=75 1x, /_next/image?url=%2Fimages%2Fbanner-headphone.webp&w=640&q=75 2x"
+        style="color: transparent; object-fit: cover;"
+        width="244"
+      />
+    </div>
+  </div>
+</div>
+`;
