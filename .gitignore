@@ -39,7 +39,6 @@ next-env.d.ts
 
 # storybook
 /storybook-static
-apps/web-vite/
 
 # Dependencies
 node_modules/
@@ -83,4 +82,3 @@ Thumbs.db
 logs/
 
 # Nested git repositories
-apps/web-vite/
