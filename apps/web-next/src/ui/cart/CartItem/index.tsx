@@ -19,7 +19,7 @@ import { CartItemResponse } from '@/types'
 import { calculateAmount, formatAmountCurrency } from '@/utils'
 
 interface CartItemProps {
-  id: string
+  documentId: string
   variantId: string
   image?: string
   name: string
@@ -36,7 +36,7 @@ interface CartItemProps {
 
 const CartItem = memo(
   ({
-    id,
+    documentId,
     variantId,
     image,
     name,
@@ -55,8 +55,8 @@ const CartItem = memo(
 
     const cartItem = useMemo(() => {
       return {
-        id: Number(id),
-        documentId: '',
+        id: 0, // Not used for updates
+        documentId,
         productVariantId: Number(variantId),
         userId: Number(USER_ID_DEFAULT),
         quantity,
@@ -65,7 +65,7 @@ const CartItem = memo(
         updatedAt: '',
         publishedAt: '',
       }
-    }, [id, quantity, size, variantId])
+    }, [documentId, quantity, size, variantId])
 
     const { isPending, handleQuantityChange, handleRemove } = useCart()
     const debounceQuantityChange = useDebounce(async (value: number) => {
@@ -77,7 +77,7 @@ const CartItem = memo(
           quantity: 0,
         })
 
-        res = await handleRemove(id)
+        res = await handleRemove(documentId)
       } else if (value !== oldQuantity) {
         addOptimisticCartItems({
           ...cartItem,
@@ -85,7 +85,7 @@ const CartItem = memo(
           quantity: value,
         })
 
-        res = await handleQuantityChange(id, {
+        res = await handleQuantityChange(documentId, {
           productVariantId: cartItem.productVariantId,
           userId: cartItem.userId || 0,
           size: cartItem.size,
@@ -125,8 +125,8 @@ const CartItem = memo(
         quantity: 0,
       })
 
-      await handleRemove(id)
-    }, [addOptimisticCartItems, cartItem, handleRemove, id])
+      await handleRemove(documentId)
+    }, [addOptimisticCartItems, cartItem, handleRemove, documentId])
 
     const amount = useMemo(
       () => calculateAmount(tax, discount, price),

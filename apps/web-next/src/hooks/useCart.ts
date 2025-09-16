@@ -21,8 +21,8 @@ export const useCart = () => {
   const [isPending, setIsPending] = useState(false)
 
   const handleQuantityChange = useCallback(
-    async (id: string, cartItem: CartItemPayload) => {
-      const response = await updateCartItem(id, cartItem)
+    async (documentId: string, cartItem: CartItemPayload) => {
+      const response = await updateCartItem(documentId, cartItem)
 
       const { FAILED, SUCCESS } = CART_MESSAGES.UPDATE
       const message = response ? SUCCESS : FAILED
@@ -38,10 +38,10 @@ export const useCart = () => {
   )
 
   const handleRemove = useCallback(
-    async (id: string) => {
+    async (documentId: string) => {
       setIsPending(true)
 
-      const isSuccess = await deleteCartItem(id)
+      const isSuccess = await deleteCartItem(documentId)
 
       const { FAILED, SUCCESS } = CART_MESSAGES.REMOVE
       const message = isSuccess ? SUCCESS : FAILED

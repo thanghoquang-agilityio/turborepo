@@ -72,7 +72,7 @@ const Dashboard = async ({ searchParams }: { searchParams?: SearchParams }) => {
   const { products, pagination } = await getProducts({
     searchParams: searchParamsAPI,
   })
-  console.log(products)
+
   return (
     <>
       <Banner

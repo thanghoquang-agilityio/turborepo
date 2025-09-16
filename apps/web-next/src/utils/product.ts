@@ -1,7 +1,7 @@
-import { ProductVariantResponse } from '@/types'
+import { ProductVariantModel } from '@/types'
 
 export const getSizeVariants = (
-  data: ProductVariantResponse[],
+  data: ProductVariantModel[],
   color: string
 ) => {
   const selectedItem = data.find((item) => item.color === color)

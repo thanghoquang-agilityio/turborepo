@@ -11,10 +11,10 @@ describe('getSizeVariants', () => {
   it('should return the correct size variants for a given color', () => {
     const result = getSizeVariants(MOCK_PRODUCT_VARIANTS, 'slate blue')
     expect(result).toEqual([
-      { size: 'Small', stock: 2 },
-      { size: 'Medium', stock: 10 },
-      { size: 'Large', stock: 2 },
-      { size: 'Extra Large', stock: 23 },
+      { size: 'Small', stock: 20 },
+      { size: 'Medium', stock: 20 },
+      { size: 'Large', stock: 20 },
+      { size: 'Extra Large', stock: 20 },
       { size: 'XXL', stock: 20 },
     ])
   })
@@ -27,13 +27,11 @@ describe('getSizeVariants', () => {
   it('should handle empty size or stock strings correctly', () => {
     const mockDataWithEmptySize = [
       {
-        id: '1',
-        attributes: {
-          color: 'Red',
-          size: '',
-          stock: '',
-          tax: 5,
-        },
+        id: 1,
+        color: 'Red',
+        size: '',
+        stock: '',
+        tax: 5,
       },
     ]
     const result = getSizeVariants(mockDataWithEmptySize, 'Red')
@@ -75,60 +73,60 @@ describe('calculateAmount', () => {
 describe('updateStockVariant', () => {
   it('should update the stock correctly for a given size', () => {
     const result = updateStockVariant({
-      sizes: MOCK_PRODUCT_VARIANTS[0].attributes.size,
-      stocks: MOCK_PRODUCT_VARIANTS[0].attributes.stock,
-      size: 'Small',
+      sizes: MOCK_PRODUCT_VARIANTS[0].size,
+      stocks: MOCK_PRODUCT_VARIANTS[0].stock,
+      size: 'small',
       quantity: 2,
     })
-    expect(result).toBe('2,10,2,23,20')
+    expect(result).toBe('18,20,20,20,20')
   })
 
   it('should handle reducing stock to zero', () => {
     const result = updateStockVariant({
-      sizes: MOCK_PRODUCT_VARIANTS[0].attributes.size,
-      stocks: MOCK_PRODUCT_VARIANTS[0].attributes.stock,
-      size: 'Large',
+      sizes: MOCK_PRODUCT_VARIANTS[0].size,
+      stocks: MOCK_PRODUCT_VARIANTS[0].stock,
+      size: 'large',
       quantity: 2,
     })
-    expect(result).toBe('2,10,2,23,20')
+    expect(result).toBe('20,20,18,20,20')
   })
 
   it('should not change stock if the size is not found', () => {
     const result = updateStockVariant({
-      sizes: MOCK_PRODUCT_VARIANTS[0].attributes.size,
-      stocks: MOCK_PRODUCT_VARIANTS[0].attributes.stock,
+      sizes: MOCK_PRODUCT_VARIANTS[0].size,
+      stocks: MOCK_PRODUCT_VARIANTS[0].stock,
       size: 'XL',
       quantity: 2,
     })
-    expect(result).toBe(MOCK_PRODUCT_VARIANTS[0].attributes.stock)
+    expect(result).toBe(MOCK_PRODUCT_VARIANTS[0].stock)
   })
 })
 
 describe('getOverStock', () => {
   it('should return false for isOverStock if stock is sufficient', () => {
     const result = getOverStock({
-      sizes: MOCK_PRODUCT_VARIANTS[0].attributes.size,
-      stocks: MOCK_PRODUCT_VARIANTS[0].attributes.stock,
+      sizes: MOCK_PRODUCT_VARIANTS[0].size,
+      stocks: MOCK_PRODUCT_VARIANTS[0].stock,
       size: 'medium',
       quantity: 3,
     })
-    expect(result).toEqual({ isOverStock: false, stock: 10 })
+    expect(result).toEqual({ isOverStock: false, stock: 20 })
   })
 
   it('should return true for isOverStock if stock is insufficient', () => {
     const result = getOverStock({
-      sizes: MOCK_PRODUCT_VARIANTS[0].attributes.size,
-      stocks: MOCK_PRODUCT_VARIANTS[0].attributes.stock,
+      sizes: MOCK_PRODUCT_VARIANTS[0].size,
+      stocks: MOCK_PRODUCT_VARIANTS[0].stock,
       size: 'large',
-      quantity: 3,
+      quantity: 25,
     })
-    expect(result).toEqual({ isOverStock: true, stock: 2 })
+    expect(result).toEqual({ isOverStock: true, stock: 20 })
   })
 
   it('should handle the case where the size is not found', () => {
     const result = getOverStock({
-      sizes: MOCK_PRODUCT_VARIANTS[0].attributes.size,
-      stocks: MOCK_PRODUCT_VARIANTS[0].attributes.stock,
+      sizes: MOCK_PRODUCT_VARIANTS[0].size,
+      stocks: MOCK_PRODUCT_VARIANTS[0].stock,
       size: 'XL',
       quantity: 1,
     })

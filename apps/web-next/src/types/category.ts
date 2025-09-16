@@ -11,7 +11,7 @@ export interface CategoryResponse {
   id: number
   documentId: string
   name: string
-  type?: any
+  type?: number
   createdAt: string
   updatedAt: string
   publishedAt: string

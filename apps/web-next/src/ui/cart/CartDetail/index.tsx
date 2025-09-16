@@ -30,6 +30,7 @@ const CartDetail = ({ cartItems }: CartDetailProps) => {
         {cartItems.map((cartItem) => {
           const { 
             id = '', 
+            documentId = '',
             quantity = 0, 
             size = '', 
             productVariantId 
@@ -43,15 +44,10 @@ const CartDetail = ({ cartItems }: CartDetailProps) => {
             tax = 0,
           } = productVariantId || {}
 
-          // Handle product relationship in new API structure
-          // These could come from:
-          // 1. Direct properties on productVariantId (if API includes product data)
-          // 2. Separate API calls to get product details
-          // 3. Extended cart response with product information
-          const name = '' // productVariantId?.product?.name || cartItem.productName || ''
-          const image = '' // productVariantId?.product?.image?.url || cartItem.productImage || ''
-          const discount = 0 // productVariantId?.product?.discount || cartItem.productDiscount || 0
-          const price = 0 // productVariantId?.product?.price || cartItem.productPrice || 0
+          const name = productVariantId?.productId?.name || ''
+          const image = productVariantId?.productId?.image?.url || ''
+          const discount = productVariantId?.productId?.discount || 0
+          const price = productVariantId?.productId?.price || 0
 
           const sizes = sizeList.split(',')
           const stocks = stockList.split(',')
@@ -63,7 +59,7 @@ const CartDetail = ({ cartItems }: CartDetailProps) => {
               <CartItem
                 key={`cart-item${id}`}
                 variantId={variantId.toString()}
-                id={id.toString()}
+                documentId={documentId}
                 quantityDefault={quantity}
                 size={size}
                 color={color}

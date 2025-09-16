@@ -19,5 +19,5 @@ export default meta
 type Story = StoryObj<typeof ProductCard>
 
 export const Default: Story = {
-  args: { ...MOCK_PRODUCT, image: '' },
+  args: { ...MOCK_PRODUCT, id: '1', image: '' },
 }

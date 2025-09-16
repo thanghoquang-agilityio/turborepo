@@ -5,7 +5,7 @@ import { apiClient } from '@/services'
 // Types
 import {
   APIRelatedResponse,
-  ProductResponse,
+  ProductModel,
   ProductsDataResponse,
   ProductsResponse,
 } from '@/types'
@@ -55,10 +55,10 @@ export const getProducts = async ({
 export const getProductById = async (
   id: string,
   searchParams: URLSearchParams = new URLSearchParams()
-): Promise<ProductResponse | null> => {
+): Promise<ProductModel | null> => {
   try {
     const url = `/${API_ENDPOINT.PRODUCTS}/${id}?${searchParams.toString()}`
-    const { data } = await apiClient.get<APIRelatedResponse<ProductResponse>>(
+    const { data } = await apiClient.get<APIRelatedResponse<ProductModel>>(
       url,
       {
         next: {

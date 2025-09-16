@@ -15,20 +15,24 @@ jest.mock('@/utils', () => ({
 // Mock cart items
 const MOCK_CART_ITEMS: CartItemResponse[] = [
   {
-    id: '1',
-    attributes: {
-      quantity: 2,
-      size: 'M',
-      productVariantId: undefined,
-    },
+    id: 1,
+    documentId: 'cart-1',
+    quantity: 2,
+    size: 'M',
+    createdAt: '2024-01-01T00:00:00.000Z',
+    updatedAt: '2024-01-01T00:00:00.000Z',
+    publishedAt: '2024-01-01T00:00:00.000Z',
+    productVariantId: undefined,
   },
   {
-    id: '2',
-    attributes: {
-      quantity: 1,
-      size: 'L',
-      productVariantId: undefined,
-    },
+    id: 2,
+    documentId: 'cart-2',
+    quantity: 1,
+    size: 'L',
+    createdAt: '2024-01-01T00:00:00.000Z',
+    updatedAt: '2024-01-01T00:00:00.000Z',
+    publishedAt: '2024-01-01T00:00:00.000Z',
+    productVariantId: undefined,
   },
 ]
 
@@ -58,12 +62,14 @@ describe('useOrderSummary', () => {
     const { result } = renderHook(() => useOrderSummary(MOCK_CART_ITEMS))
 
     const newCartItem: CartItemResponse = {
-      id: '1', // Existing item
-      attributes: {
-        quantity: 3, // Updated quantity
-        size: 'M',
-        productVariantId: undefined,
-      },
+      id: 1, // Existing item
+      documentId: 'cart-1',
+      quantity: 3, // Updated quantity
+      size: 'M',
+      createdAt: '2024-01-01T00:00:00.000Z',
+      updatedAt: '2024-01-01T00:00:00.000Z',
+      publishedAt: '2024-01-01T00:00:00.000Z',
+      productVariantId: undefined,
     }
 
     act(() => {
@@ -78,12 +84,14 @@ describe('useOrderSummary', () => {
     const { result } = renderHook(() => useOrderSummary(MOCK_CART_ITEMS))
 
     const newCartItem: CartItemResponse = {
-      id: '3', // New item
-      attributes: {
-        quantity: 1,
-        size: 'S',
-        productVariantId: undefined,
-      },
+      id: 3, // New item
+      documentId: 'cart-3',
+      quantity: 1,
+      size: 'S',
+      createdAt: '2024-01-01T00:00:00.000Z',
+      updatedAt: '2024-01-01T00:00:00.000Z',
+      publishedAt: '2024-01-01T00:00:00.000Z',
+      productVariantId: undefined,
     }
 
     act(() => {

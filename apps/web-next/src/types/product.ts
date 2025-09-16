@@ -7,13 +7,14 @@ export interface ProductVariantModel {
   id: number
   color: string
   size: string
-  stock: number
+  stock: string
   tax: number
   productId?: ProductModel
 }
 
 export interface ProductModel {
   id: number
+  documentId: string
   name: string
   description: string
   image?: ImageModel

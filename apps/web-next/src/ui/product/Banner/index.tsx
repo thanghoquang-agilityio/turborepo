@@ -33,6 +33,7 @@ const Banner = memo(({ description, image, onBuyNow }: BannerProps) => {
           className='top-[18px] h-[104px] w-[96px] sm:absolute sm:right-[68px] sm:h-[161px] sm:w-[146px] md:h-[269px] md:w-[244px] lg:right-[178px]'
           width={244}
           height={269}
+          priority
         />
       </div>
     </div>

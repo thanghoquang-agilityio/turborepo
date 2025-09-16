@@ -1,4 +1,4 @@
-import { APIRelatedResponse, CartItemModel, ImageResponse, CartItemResponse } from '@/types'
+import { CartItemModel, ImageModel } from '@/types'
 
 type CartItems = Omit<CartItemModel, 'productVariantId'> & {
   id: number
@@ -7,19 +7,7 @@ type CartItems = Omit<CartItemModel, 'productVariantId'> & {
 export interface UserModel {
   username: string
   email: string
-  image?: APIRelatedResponse<ImageResponse>
+  image?: ImageModel
   cartItems: CartItems[]
 }
 
-// New flattened user response structure
-export interface UserResponse {
-  id: number
-  documentId: string
-  username: string
-  email: string
-  createdAt: string
-  updatedAt: string
-  publishedAt: string
-  image?: ImageResponse
-  cartItems?: CartItemResponse[]
-}

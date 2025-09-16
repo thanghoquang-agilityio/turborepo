@@ -22,7 +22,6 @@ export const createOrUpdateCartItem = async (cartItem: CartItemPayload) => {
   return await createOrUpdateCartItemSV(cartItem, searchParams)
 }
 
-export const deleteCartItem = async (id: string) => await deleteCartItemSV(id)
+export const deleteCartItem = async (documentId: string) => await deleteCartItemSV(documentId)
 
-export const updateCartItem = async (id: string, cartItem: CartItemPayload) =>
-  await updateCartItemSV(id, cartItem)
+export const updateCartItem = async (documentId: string, cartItem: CartItemPayload) => await updateCartItemSV(documentId, cartItem)

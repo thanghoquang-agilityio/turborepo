@@ -5,7 +5,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 
-export default function createConfig({ isNext = false } = {}) {
+export default function createConfig({ isNext = false, tsconfigRootDir } = {}) {
   return tseslint.config(
     { ignores: ['dist', '.next', 'coverage'] },
     {
@@ -14,6 +14,12 @@ export default function createConfig({ isNext = false } = {}) {
       languageOptions: {
         ecmaVersion: 2020,
         globals: isNext ? { ...globals.browser, React: true } : globals.browser,
+        ...(tsconfigRootDir && {
+          parserOptions: {
+            project: true,
+            tsconfigRootDir,
+          },
+        }),
       },
       plugins: {
         'react-hooks': reactHooks,

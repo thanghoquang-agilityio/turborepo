@@ -17,7 +17,7 @@ import {
   StarLineIcon,
 } from '@/icons'
 // Types
-import { ProductVariantResponse } from '@/types'
+import { ProductVariantModel } from '@/types'
 // Utils
 import { calculateAmount, formatAmountCurrency, getSizeVariants } from '@/utils'
 
@@ -30,7 +30,7 @@ const SizeRadioGroup = dynamic(
 const RelatedInfo = dynamic(() => import('@/ui/product-detail/RelatedInfo'))
 
 interface ProductActionProps {
-  productVariants?: ProductVariantResponse[]
+  productVariants?: ProductVariantModel[]
   discount: number
   price: number
   star: number

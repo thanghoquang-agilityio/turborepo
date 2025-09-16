@@ -26,9 +26,6 @@ export type CartItemPayload = {
   userId: number
 }
 
-// Keep the old type for backward compatibility if needed
-export type LegacyCartItemResponse = CartItemModel
-
 export type CartItemsDataResponse = Promise<{
   cartItems: CartItemResponse[]
   error?: Error

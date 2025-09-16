@@ -18,10 +18,7 @@ const CartPage = async () => {
   const searchParams = new URLSearchParams()
   searchParams.set('filters[userId][$eq]', USER_ID_DEFAULT)
   searchParams.set(`sort[0]`, 'createdAt:desc')
-  searchParams.set(
-    'populate[productVariantId][populate][productId][populate][image]',
-    '*'
-  )
+  searchParams.set('populate', 'productVariantId.productId.image')
 
   const { cartItems } = await getCartByUserId(searchParams)
 

@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 // Constants
 import { COMMENTS_DEFAULT, IMAGE_DEFAULT, STAR_DEFAULT } from '@/constants'
 // Types
-import { ImageModel, ProductResponse, ImageResponse, ProductVariantResponse } from '@/types'
+import { ImageModel, ProductModel, ProductVariantModel } from '@/types'
 
 const MediaPreview = dynamic(() => import('@/ui/product-detail/MediaPreview'))
 const ProductHeaderInfo = dynamic(
@@ -16,10 +16,10 @@ const ProductAction = dynamic(
 )
 
 interface ProductDetailProps {
-  product: ProductResponse
+  product: ProductModel
   // Add optional image and variant data that might come from relationships or separate calls
-  images?: ImageResponse[]
-  productVariants?: ProductVariantResponse[]
+  images?: ImageModel[]
+  productVariants?: ProductVariantModel[]
 }
 
 const ProductDetail = ({ product, images = [], productVariants = [] }: ProductDetailProps) => {

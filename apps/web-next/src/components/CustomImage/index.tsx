@@ -8,7 +8,7 @@ import Image, { ImageProps } from 'next/image'
 import { IMAGE_NOT_AVAILABLE, SRC_IMAGE_NOT_AVAILABLE } from '@/constants'
 
 export const CustomImage = memo(
-  ({ className, src, alt, ...rest }: ImageProps) => {
+  ({ className, src, alt, style, ...rest }: ImageProps) => {
     const [fallbackSrc, setFallbackSrc] = useState(false)
 
     const handleOnError = () => setFallbackSrc(true)
@@ -21,9 +21,8 @@ export const CustomImage = memo(
         src={fallbackSrc ? SRC_IMAGE_NOT_AVAILABLE : src}
         alt={altImage}
         onError={handleOnError}
-        style={{ objectFit: 'cover' }}
+        style={{ objectFit: 'cover', ...style }}
         {...rest}
-        priority
       />
     )
   }

@@ -213,6 +213,7 @@ const ProductList = ({
                   {products.map((product: ProductModel) => {
                     const {
                       id = '',
+                      documentId = '',
                       name = '',
                       price = 0,
                       star = STAR_DEFAULT,
@@ -228,7 +229,7 @@ const ProductList = ({
                       <Suspense key={`card-product-suspense-${id}`}>
                         <ProductCard
                           key={`card-product-${id}`}
-                          id={id.toString()}
+                          id={documentId}
                           image={imageUrl}
                           name={name}
                           price={price}

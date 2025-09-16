@@ -6,7 +6,6 @@ import { API_ENDPOINT } from '@/constants'
 import { apiClient } from '@/services'
 // Models
 import {
-  APIRelatedResponse,
   CartItemPayload,
   CartItemResponse,
   CartItemsDataResponse,
@@ -52,12 +51,10 @@ export const addCartItem = async (
   cartItem: CartItemPayload
 ): Promise<CartItemResponse | null> => {
   try {
-    const { data } = await apiClient.post<APIRelatedResponse<CartItemResponse>>(
+    const data = await apiClient.post<CartItemResponse>(
       `/${API_ENDPOINT.CARTS}`,
       {
-        body: {
-          data: cartItem,
-        },
+        body: cartItem,
       }
     )
     revalidateTag(API_ENDPOINT.CARTS)
@@ -68,28 +65,25 @@ export const addCartItem = async (
     const errorMessage =
       _error instanceof Error
         ? _error.message
-        : 'An unexpected error occurred in the request get cart'
+        : 'An unexpected error occurred in the request add cart item'
 
-    // During build time or when API is unavailable, return empty cart
     // eslint-disable-next-line no-console
-    console.warn('Failed to fetch cart data:', errorMessage)
+    console.warn('Failed to add cart item:', errorMessage)
 
     return null
   }
 }
 
 export const updateCartItem = async (
-  id: string,
+  documentId: string,
   cartItem: CartItemPayload
 ): Promise<CartItemResponse | null> => {
   try {
-    const { data } = await apiClient.put<APIRelatedResponse<CartItemResponse>>(
-      `/${API_ENDPOINT.CARTS}/${id}`,
+    const data = await apiClient.put<CartItemResponse>(
+      `/${API_ENDPOINT.CARTS}/${documentId}`,
       {
         body: {
-          data: {
-            quantity: cartItem.quantity,
-          },
+          quantity: cartItem.quantity,
         },
       }
     )
@@ -101,21 +95,20 @@ export const updateCartItem = async (
     const errorMessage =
       _error instanceof Error
         ? _error.message
-        : 'An unexpected error occurred in the request get cart'
+        : 'An unexpected error occurred in the request update cart item'
 
-    // During build time or when API is unavailable, return empty cart
     // eslint-disable-next-line no-console
-    console.warn('Failed to fetch cart data:', errorMessage)
+    console.warn('Failed to update cart item:', errorMessage)
 
     return null
   }
 }
 
-export const deleteCartItem = async (cartItemId: string) => {
+export const deleteCartItem = async (documentId: string) => {
   try {
-    const response = await apiClient.delete<
-      APIRelatedResponse<CartItemResponse>
-    >(`/${API_ENDPOINT.CARTS}/${cartItemId}`)
+    const response = await apiClient.delete<CartItemResponse>(
+      `/${API_ENDPOINT.CARTS}/${documentId}`
+    )
     if (response) {
       revalidateTag(API_ENDPOINT.CARTS)
       revalidateTag(API_ENDPOINT.USERS)
@@ -128,11 +121,10 @@ export const deleteCartItem = async (cartItemId: string) => {
     const errorMessage =
       _error instanceof Error
         ? _error.message
-        : 'An unexpected error occurred in the request get cart'
+        : 'An unexpected error occurred in the request delete cart item'
 
-    // During build time or when API is unavailable, return empty cart
     // eslint-disable-next-line no-console
-    console.warn('Failed to fetch cart data:', errorMessage)
+    console.warn('Failed to delete cart item:', errorMessage)
     return false
   }
 }
@@ -149,7 +141,7 @@ export const createOrUpdateCartItem = async (
       `/${API_ENDPOINT.CARTS}?${searchParams.toString()}`
     )
 
-    const { data } = await apiClient.get<CartItemsResponse>(url)
+    const data = await apiClient.get<CartItemResponse[]>(url)
     const existingCartItem = data[0] || {}
     const { productVariantId } = existingCartItem
     const stocks = productVariantId?.stock || ''
@@ -170,8 +162,8 @@ export const createOrUpdateCartItem = async (
         size: cartItem.size,
         quantity: newQuantity,
       })
-      const id = existingCartItem.id?.toString() || ''
-      response = await updateCartItem(id, {
+      const documentId = existingCartItem.documentId || ''
+      response = await updateCartItem(documentId, {
         productVariantId: cartItem.productVariantId,
         userId: cartItem.userId,
         size: cartItem.size,
