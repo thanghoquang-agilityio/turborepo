@@ -3,7 +3,7 @@
 exports[`ProductCard should match snapshot 1`] = `
 <div>
   <div
-    class="h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium transition-transform-background motion-reduce:transition-none card relative flex items-center flex-col max-w-[305px] border-medium border-background-300 rounded-large overflow-hidden"
+    class="h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium transition-transform-background motion-reduce:transition-none card relative flex max-w-[305px] flex-col items-center overflow-hidden rounded-large border-medium border-background-300"
     tabindex="-1"
   >
     <button
@@ -31,25 +31,25 @@ exports[`ProductCard should match snapshot 1`] = `
     >
       <img
         alt="E"
-        class="card-image md:w-[305px] md:h-[303px] w-full"
+        class="card-image w-full md:h-[303px] md:w-[305px]"
         data-nimg="1"
         decoding="async"
-        fetchpriority="high"
         height="303"
-        src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com&w=640&q=75"
-        srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com&w=640&q=75 2x"
+        loading="lazy"
+        src="http://localhost/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com&w=640&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com&w=640&q=75 2x"
         style="color: transparent; object-fit: cover;"
         width="305"
       />
     </a>
     <div
-      class="flex flex-col w-full gap-[5px] p-5 overflow-hidden"
+      class="flex w-full flex-col gap-[5px] overflow-hidden p-5"
     >
       <div
-        class="card-content flex md:flex-row flex-col justify-between"
+        class="card-content flex flex-col justify-between md:flex-row"
       >
         <p
-          class="text-primary-300 font-semibold text-lg no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-400 max-w-[150px]"
+          class="text-primary-300 font-semibold text-lg no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[150px] text-primary-400"
         >
           Embrace Sideboard
         </p>
@@ -65,10 +65,10 @@ exports[`ProductCard should match snapshot 1`] = `
          types of shoos available
       </p>
       <div
-        class="flex mt-2 gap-2"
+        class="mt-2 flex gap-2"
       >
         <div
-          class="flex h-[17px] gap-0.25 text-warning-200"
+          class="gap-0.25 flex h-[17px] text-warning-200"
         >
           <svg
             class="w-full h-full"
@@ -136,7 +136,7 @@ exports[`ProductCard should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="card-content w-full flex md:flex-row flex-col md:justify-between items-end gap-3 mt-1 px-5 mb-6"
+      class="card-content mb-6 mt-1 flex w-full flex-col items-end gap-3 px-5 md:flex-row md:justify-between"
     >
       <button
         aria-label="Add To Cart"

@@ -9,6 +9,7 @@ import { useOrderSummary } from '@/hooks'
 import '@/styles/card-list.css'
 // Types
 import { CartItemResponse } from '@/types'
+import { Content } from '@/components'
 
 // Components
 const CartItem = dynamic(() => import('../CartItem'))
@@ -21,6 +22,10 @@ interface CartDetailProps {
 const CartDetail = ({ cartItems }: CartDetailProps) => {
   const { totalAmount, totalItems, addOptimisticCartItems } =
     useOrderSummary(cartItems)
+
+  if(!cartItems.length) {
+    return <Content title='Empty items in your cart' subTitle='Continue shopping' />
+  }
 
   return (
     <div className='container flex w-full max-w-full flex-col items-center gap-[40px] py-8 lg:flex-row lg:items-start lg:py-12 xl:py-16'>

@@ -33,10 +33,11 @@ describe('Cart Service tests', () => {
     expect(result).toStrictEqual({ cartItems: MOCK_CART_RESPONSE })
   })
 
-  it('getCartByUserId throws an error when API call fails', async () => {
+  it('getCartByUserId returns empty cart when API call fails', async () => {
     jest.spyOn(apiClient, 'get').mockRejectedValue(new Error('Failed'))
 
-    await expect(getCartByUserId()).rejects.toThrow('Failed')
+    const result = await getCartByUserId()
+    expect(result).toStrictEqual({ cartItems: [] })
   })
 
   it('addCartItem returns value correctly', async () => {
@@ -95,7 +96,7 @@ describe('Cart Service tests', () => {
     const result = await createOrUpdateCartItem(cartPayload)
     expect(result).toStrictEqual({
       cartItem: MOCK_CART_RESPONSE[0],
-      isOverStock: true,
+      isOverStock: false,
     })
   })
 

@@ -3,10 +3,10 @@
 exports[`Profile component Should match snapshot 1`] = `
 <div>
   <div
-    class="flex gap-[14px] items-center "
+    class="flex items-center gap-[14px] "
   >
     <span
-      class="flex relative justify-center items-center box-border overflow-hidden align-middle z-0 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-tiny text-default-foreground rounded-full bg-background-200 lg:h-[50px] lg:w-[50px] md:h-[40px] md:w-[40px] h-[30px] w-[30px]"
+      class="flex relative justify-center items-center box-border overflow-hidden align-middle z-0 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-tiny text-default-foreground rounded-full h-[30px] w-[30px] bg-background-200 md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"
       tabindex="-1"
     >
       <img
@@ -39,7 +39,7 @@ exports[`Profile component Should match snapshot 1`] = `
       </span>
     </span>
     <div
-      class="flex flex-col gap-[7px] lg:flex hidden  max-w-[126px] overflow-hidden"
+      class="flex hidden max-w-[126px] flex-col gap-[7px] overflow-hidden lg:flex"
     >
       <p
         class="text-foreground-300 font-normal  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-xs"

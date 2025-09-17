@@ -4,6 +4,7 @@ import { MOCK_PRODUCT_VARIANTS } from './product'
 export const MOCK_CART_ITEM = {
   id: '1',
   variantId: '1',
+  documentId: '1',
   name: 'Embrace Sideboard',
   color: 'wheat',
   size: 'small',

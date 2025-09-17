@@ -3,12 +3,12 @@
 exports[`Toast component Should match snapshot 1`] = `
 <div>
   <div
-    class="fixed z-[9999] right-5 top-5 flex items-center w-full max-w-xs p-4 pr-8 mb-4 rounded-lg bg-success-100"
+    class="fixed right-5 top-5 z-[9999] mb-4 flex w-full max-w-xs items-center rounded-lg p-4 pr-8 bg-success-100"
     data-testid="toast"
     role="alert"
   >
     <p
-      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-background-100 overflow-visible whitespace-pre-wrap"
+      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden overflow-visible whitespace-pre-wrap text-background-100"
     >
       success!
     </p>

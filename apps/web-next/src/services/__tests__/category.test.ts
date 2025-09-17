@@ -20,18 +20,18 @@ describe('Category service', () => {
       categories: mockCategoryRes,
     })
   })
-  it('getCategoryList throws an error with a specific message when API call fails with an Error object', async () => {
+  it('getCategoryList returns empty categories when API call fails with an Error object', async () => {
     const mockErrorMessage = 'Request failed'
     jest.spyOn(apiClient, 'get').mockRejectedValue(new Error(mockErrorMessage))
 
-    await expect(getCategoryList()).rejects.toThrow(mockErrorMessage)
+    const result = await getCategoryList()
+    expect(result).toStrictEqual({ categories: [] })
   })
 
-  it('getCategoryList throws a generic error message when API call fails with a non-Error object', async () => {
+  it('getCategoryList returns empty categories when API call fails with a non-Error object', async () => {
     jest.spyOn(apiClient, 'get').mockRejectedValue(false)
 
-    await expect(getCategoryList()).rejects.toThrow(
-      'An unexpected error occurred in the request get categories'
-    )
+    const result = await getCategoryList()
+    expect(result).toStrictEqual({ categories: [] })
   })
 })

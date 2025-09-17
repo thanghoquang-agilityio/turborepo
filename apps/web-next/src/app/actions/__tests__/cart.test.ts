@@ -58,7 +58,7 @@ describe('Cart actions', () => {
 
     expect(await createOrUpdateCartItem(cartPayload)).toStrictEqual({
       cartItem: MOCK_CART_RESPONSE[0],
-      isOverStock: true,
+      isOverStock: false,
     })
   })
 

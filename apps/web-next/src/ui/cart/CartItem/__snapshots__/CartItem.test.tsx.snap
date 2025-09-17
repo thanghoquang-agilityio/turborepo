@@ -3,7 +3,7 @@
 exports[`CartItem should match snapshot 1`] = `
 <div>
   <div
-    class="h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium transition-transform-background motion-reduce:transition-none card relative flex items-center flex-col max-w-[305px] pt-3 pb-5 border-medium border-background-300 rounded-large overflow-hidden"
+    class="h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium transition-transform-background motion-reduce:transition-none card relative flex max-w-[305px] flex-col items-center overflow-hidden rounded-large border-medium border-background-300 pb-5 pt-3"
     tabindex="-1"
   >
     <button
@@ -25,12 +25,12 @@ exports[`CartItem should match snapshot 1`] = `
       </svg>
     </button>
     <p
-      class="text-primary-300 font-semibold  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-xl text-primary-400 max-w-[250px]"
+      class="text-primary-300 font-semibold  no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[250px] text-xl text-primary-400"
     >
       Embrace Sideboard
     </p>
     <p
-      class="text-foreground-300 font-normal text-sm no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[250px] text-secondary-500 capitalize"
+      class="text-foreground-300 font-normal text-sm no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[250px] capitalize text-secondary-500"
     >
       wheat
        / 
@@ -38,18 +38,18 @@ exports[`CartItem should match snapshot 1`] = `
     </p>
     <img
       alt="E"
-      class="card-image w-[305px] h-[303px] mt-4 mb-5"
+      class="card-image mb-5 mt-4 h-[303px] w-[305px]"
       data-nimg="1"
       decoding="async"
-      fetchpriority="high"
       height="303"
-      src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.comundefined&w=640&q=75"
-      srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.comundefined&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.comundefined&w=640&q=75 2x"
+      loading="lazy"
+      src="http://localhost/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.comundefined&w=640&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.comundefined&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.comundefined&w=640&q=75 2x"
       style="color: transparent; object-fit: cover;"
       width="305"
     />
     <div
-      class="flex w-[150px] justify-between p-2 h-[40px] rounded-[30px] bg-background-100 border-small border-background-300"
+      class="flex h-[40px] w-[150px] justify-between rounded-[30px] border-small border-background-300 bg-background-100 p-2"
     >
       <button
         aria-label="Button"
@@ -70,7 +70,7 @@ exports[`CartItem should match snapshot 1`] = `
         </svg>
       </button>
       <p
-        class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-300 font-bold text-[20px] leading-[22px]"
+        class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-[20px] font-bold leading-[22px] text-primary-300"
       >
         2
       </p>
@@ -94,7 +94,7 @@ exports[`CartItem should match snapshot 1`] = `
       </button>
     </div>
     <div
-      class="relative flex justify-between w-full mt-10 px-4 before:content-[''] before:absolute before:w-full before:border-t-small before:border-background-300 before:top-[-20px]"
+      class="relative mt-10 flex w-full justify-between px-4 before:content-[''] before:absolute before:w-full before:border-t-small before:border-background-300 before:top-[-20px]"
     >
       <p
         class="text-primary-200 dark:text-primary-300 font-semibold text-lg no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[100px]"

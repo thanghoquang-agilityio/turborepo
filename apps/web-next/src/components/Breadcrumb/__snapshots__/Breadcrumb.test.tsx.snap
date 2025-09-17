@@ -5,7 +5,7 @@ exports[`Breadcrumb Renders match snapshot 1`] = `
   <div>
     <nav
       aria-label="Breadcrumbs"
-      class="bg-background-300 w-fit rounded-medium"
+      class="w-fit rounded-medium bg-background-300"
       data-slot="base"
     >
       <ol

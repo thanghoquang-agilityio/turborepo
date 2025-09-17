@@ -1,12 +1,12 @@
 /** @typedef {import('jest').Config} Config */
-import nextJest from 'next/jest'
+const nextJest = require('next/jest')
 
 /**
  * Shared Jest config. Set `isNext` to true for Next.js projects.
  * @param {{ isNext?: boolean, rootDir?: string }} [options]
  * @returns {Config}
  */
-export default function createJestConfig(options = {}) {
+function createJestConfig(options = {}) {
   const { isNext = false, rootDir = '<rootDir>' } = options
 
   /** @type {Config} */
@@ -25,5 +25,7 @@ export default function createJestConfig(options = {}) {
   const withNext = nextJest({ dir: './' })
   return withNext(base)
 }
+
+module.exports = createJestConfig
 
 

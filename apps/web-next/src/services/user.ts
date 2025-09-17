@@ -4,7 +4,7 @@ import { UserModel } from '@/types'
 
 export const getUserById = async (id: string): Promise<UserModel | null> => {
   try {
-    const url = `/${API_ENDPOINT.USERS}/${id}?populate[0]=cartItems`
+    const url = `/${API_ENDPOINT.USERS}/${id}?populate[cartItems][filters][publishedAt][$notNull]=true`
     const data = await apiClient.get<UserModel>(url, {
       next: {
         tags: [API_ENDPOINT.USERS],

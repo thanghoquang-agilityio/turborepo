@@ -18,10 +18,7 @@ export const getCartByUserId = async (
   searchParams: URLSearchParams = new URLSearchParams()
 ): CartItemsDataResponse => {
   try {
-    const url = decodeURIComponent(
-      `/${API_ENDPOINT.CARTS}?${searchParams.toString()}`
-    )
-
+    const url = decodeURIComponent(`/${API_ENDPOINT.CARTS}?${searchParams.toString()}`)
     const { data } = await apiClient.get<CartItemsResponse>(url, {
       next: {
         tags: [API_ENDPOINT.CARTS],
@@ -51,10 +48,17 @@ export const addCartItem = async (
   cartItem: CartItemPayload
 ): Promise<CartItemResponse | null> => {
   try {
-    const data = await apiClient.post<CartItemResponse>(
+    const { data } = await apiClient.post<{ data: CartItemResponse }>(
       `/${API_ENDPOINT.CARTS}`,
       {
-        body: cartItem,
+        body: {
+          data: {
+            size: cartItem.size,
+            quantity: cartItem.quantity,
+            productVariantId: cartItem.productVariantId,
+            userId: cartItem.userId
+          },
+        },
       }
     )
     revalidateTag(API_ENDPOINT.CARTS)
@@ -79,11 +83,13 @@ export const updateCartItem = async (
   cartItem: CartItemPayload
 ): Promise<CartItemResponse | null> => {
   try {
-    const data = await apiClient.put<CartItemResponse>(
+    const { data } = await apiClient.put<{ data: CartItemResponse }>(
       `/${API_ENDPOINT.CARTS}/${documentId}`,
       {
         body: {
-          quantity: cartItem.quantity,
+          data: {
+            quantity: cartItem.quantity,
+          },
         },
       }
     )
@@ -106,13 +112,14 @@ export const updateCartItem = async (
 
 export const deleteCartItem = async (documentId: string) => {
   try {
-    const response = await apiClient.delete<CartItemResponse>(
-      `/${API_ENDPOINT.CARTS}/${documentId}`
+    const response = await apiClient.delete<{ success: boolean; status: number }>(
+      `/${API_ENDPOINT.CARTS}/${documentId}`,
     )
+
+    // Strapi v5 delete operations return either the deleted item or empty response
     if (response) {
       revalidateTag(API_ENDPOINT.CARTS)
       revalidateTag(API_ENDPOINT.USERS)
-
       return true
     }
 
@@ -141,7 +148,8 @@ export const createOrUpdateCartItem = async (
       `/${API_ENDPOINT.CARTS}?${searchParams.toString()}`
     )
 
-    const data = await apiClient.get<CartItemResponse[]>(url)
+    const apiResponse = await apiClient.get<{ data: CartItemResponse[] }>(url)
+    const data = apiResponse.data || []
     const existingCartItem = data[0] || {}
     const { productVariantId } = existingCartItem
     const stocks = productVariantId?.stock || ''
@@ -152,7 +160,7 @@ export const createOrUpdateCartItem = async (
       stock: 1,
     }
 
-    let response: CartItemResponse | null
+    let cartItemResponse: CartItemResponse | null
 
     if (data.length) {
       const newQuantity = existingCartItem.quantity + cartItem.quantity
@@ -163,18 +171,18 @@ export const createOrUpdateCartItem = async (
         quantity: newQuantity,
       })
       const documentId = existingCartItem.documentId || ''
-      response = await updateCartItem(documentId, {
+      cartItemResponse = await updateCartItem(documentId, {
         productVariantId: cartItem.productVariantId,
         userId: cartItem.userId,
         size: cartItem.size,
         quantity: overStock.isOverStock ? overStock.stock : newQuantity,
       })
     } else {
-      response = await addCartItem(cartItem)
+      cartItemResponse = await addCartItem(cartItem)
     }
 
     return {
-      cartItem: response,
+      cartItem: cartItemResponse,
       isOverStock: overStock.isOverStock,
     }
   } catch (_error) {

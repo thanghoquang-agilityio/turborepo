@@ -16,8 +16,9 @@ export const metadata: Metadata = {
 
 const CartPage = async () => {
   const searchParams = new URLSearchParams()
-  searchParams.set('filters[userId][$eq]', USER_ID_DEFAULT)
-  searchParams.set(`sort[0]`, 'createdAt:desc')
+  searchParams.set('filters[userId][$eq]', USER_ID_DEFAULT.toString())
+  searchParams.set('filters[publishedAt][$notNull]', 'true')
+  searchParams.set('sort[0]', 'createdAt:desc')
   searchParams.set('populate', 'productVariantId.productId.image')
 
   const { cartItems } = await getCartByUserId(searchParams)

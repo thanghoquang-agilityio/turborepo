@@ -6,7 +6,7 @@ export const API_ENDPOINT = {
   USERS: 'users',
 }
 
-export const USER_ID_DEFAULT = "1"
+export const USER_ID_DEFAULT = 1
 
 export const API_URL =
   process.env.NEXT_PUBLIC_API_URL || 'https://api.example.com'

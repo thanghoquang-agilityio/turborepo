@@ -7,7 +7,7 @@ import { calculateAmount } from '@/utils'
 
 export const useOrderSummary = (cartItems: CartItemResponse[]) => {
   const [optimisticCartItems, addOptimisticCartItems] = useOptimistic(
-    cartItems,
+    Array.isArray(cartItems) ? cartItems : [],
     (state: CartItemResponse[], newCartItem: CartItemResponse) => {
       const existingItemIndex = state.findIndex(
         (item) => item.id === newCartItem.id
@@ -27,7 +27,7 @@ export const useOrderSummary = (cartItems: CartItemResponse[]) => {
     }
   )
 
-  const { totalAmount, totalItems } = optimisticCartItems.reduce(
+  const { totalAmount, totalItems } = (Array.isArray(optimisticCartItems) ? optimisticCartItems : []).reduce(
     (acc, cartItem) => {
       const { quantity = 0, productVariantId } = cartItem
       const { tax = 0 } = productVariantId || {}

@@ -3,10 +3,10 @@
 exports[`Content Renders empty title and subtitle match snapshot 1`] = `
 <div>
   <div
-    class="flex flex-col h-full gap-4 items-center justify-center"
+    class="flex h-full flex-col items-center justify-center gap-4"
   >
     <p
-      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-300 font-bold md:text-5xl text-3xl md:leading-10 leading-[28px]"
+      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-3xl font-bold leading-[28px] text-primary-300 md:text-5xl md:leading-10"
     >
       COMING SOON
     </p>
@@ -34,10 +34,10 @@ exports[`Content Renders empty title and subtitle match snapshot 1`] = `
 exports[`Content Renders have title and subtitle match snapshot 1`] = `
 <div>
   <div
-    class="flex flex-col h-full gap-4 items-center justify-center"
+    class="flex h-full flex-col items-center justify-center gap-4"
   >
     <p
-      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-300 font-bold md:text-5xl text-3xl md:leading-10 leading-[28px]"
+      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-3xl font-bold leading-[28px] text-primary-300 md:text-5xl md:leading-10"
     >
       Title
     </p>

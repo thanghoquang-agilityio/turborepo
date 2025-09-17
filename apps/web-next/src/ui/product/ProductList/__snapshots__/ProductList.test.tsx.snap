@@ -3,19 +3,19 @@
 exports[`ProductList should match snapshot 1`] = `
 <div>
   <div
-    class="container w-full max-w-full xl:py-16 lg:py-12 py-8 "
+    class="container w-full max-w-full py-8 lg:py-12 xl:py-16 "
   >
     <div
       class="w-full"
     >
       <div
-        class="flex sm:flex-row flex-col gap-4 items-center lg:justify-between justify-end xl:mb-12 mb-6"
+        class="flex flex-col items-center gap-4 sm:flex-row lg:justify-between mb-6 justify-end xl:mb-12"
       >
         <div
           class="flex gap-3"
         >
           <div
-            class="group flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[160px] block"
+            class="group flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-sm font-medium text-primary-200 w-[160px] block"
             data-filled="true"
             data-slot="base"
           >
@@ -112,7 +112,7 @@ exports[`ProductList should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[88px] lg:block hidden"
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-sm font-medium text-primary-200 w-[88px] lg:block hidden"
             data-filled="true"
             data-slot="base"
           >
@@ -191,7 +191,7 @@ exports[`ProductList should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[102px] lg:block hidden"
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-sm font-medium text-primary-200 w-[102px] lg:block hidden"
             data-filled="true"
             data-slot="base"
           >
@@ -270,7 +270,7 @@ exports[`ProductList should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[98px] lg:block hidden"
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-sm font-medium text-primary-200 w-[98px] lg:block hidden"
             data-filled="true"
             data-slot="base"
           >
@@ -349,7 +349,7 @@ exports[`ProductList should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[108px] lg:block hidden"
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-sm font-medium text-primary-200 w-[108px] lg:block hidden"
             data-filled="true"
             data-slot="base"
           >
@@ -428,7 +428,7 @@ exports[`ProductList should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm w-[88px] lg:block hidden"
+            class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-sm font-medium text-primary-200 w-[88px] lg:block hidden"
             data-filled="true"
             data-slot="base"
           >
@@ -508,7 +508,7 @@ exports[`ProductList should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 text-primary-200 font-medium text-sm w-[166px] bg-background-100 border-small border-foreground-300 lg:block hidden"
+          class="group flex-col pointer-events-none transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 text-sm font-medium text-primary-200 w-[166px] bg-background-100 border-small border-foreground-300 lg:block hidden"
           data-filled="true"
           data-slot="base"
         >
@@ -588,7 +588,7 @@ exports[`ProductList should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="card-list grid grid-cols-2 gap-x-[20px] gap-y-[30px] mb-[110px] w-fit mx-auto 2xl:grid-cols-4 lg:grid-cols-3"
+        class="card-list mx-auto mb-[110px] grid w-fit grid-cols-2 gap-x-[20px] gap-y-[30px] 2xl:grid-cols-4 lg:grid-cols-3"
       />
     </div>
   </div>
@@ -598,26 +598,26 @@ exports[`ProductList should match snapshot 1`] = `
 exports[`ProductList should match snapshot value error 1`] = `
 <div>
   <div
-    class="container w-full max-w-full xl:py-16 lg:py-12 py-8 "
+    class="container w-full max-w-full py-8 lg:py-12 xl:py-16 "
   >
     <div
       class="w-full"
     >
       <div
-        class="flex sm:flex-row flex-col gap-4 items-center lg:justify-between justify-end xl:mb-12 mb-6"
+        class="flex flex-col items-center gap-4 sm:flex-row lg:justify-between mb-6 justify-end xl:mb-12"
       >
         <div
           class="flex gap-3"
         />
       </div>
       <div
-        class="flex flex-col min-h-[320px] h-[320px] gap-4 items-center justify-center"
+        class="flex h-[320px] min-h-[320px] flex-col items-center justify-center gap-4"
       >
         <div
-          class="flex flex-col h-full gap-4 items-center justify-center"
+          class="flex h-full flex-col items-center justify-center gap-4"
         >
           <p
-            class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-300 font-bold md:text-5xl text-3xl md:leading-10 leading-[28px]"
+            class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-3xl font-bold leading-[28px] text-primary-300 md:text-5xl md:leading-10"
           >
             Empty product
           </p>

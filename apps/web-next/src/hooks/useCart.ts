@@ -41,19 +41,31 @@ export const useCart = () => {
     async (documentId: string) => {
       setIsPending(true)
 
-      const isSuccess = await deleteCartItem(documentId)
+      try {
+        const isSuccess = await deleteCartItem(documentId)
 
-      const { FAILED, SUCCESS } = CART_MESSAGES.REMOVE
-      const message = isSuccess ? SUCCESS : FAILED
+        const { FAILED, SUCCESS } = CART_MESSAGES.REMOVE
+        const message = isSuccess ? SUCCESS : FAILED
 
-      setIsPending(false)
+        openToast({
+          type: isSuccess ? TOAST_TYPE.SUCCESS : TOAST_TYPE.ERROR,
+          message,
+        })
 
-      openToast({
-        type: isSuccess ? TOAST_TYPE.SUCCESS : TOAST_TYPE.ERROR,
-        message,
-      })
+        return isSuccess
+      } catch (error) {
+        
+        const { FAILED } = CART_MESSAGES.REMOVE
+        
+        openToast({
+          type: TOAST_TYPE.ERROR,
+          message: FAILED,
+        })
 
-      return isSuccess
+        return false
+      } finally {
+        setIsPending(false)
+      }
     },
     [openToast]
   )

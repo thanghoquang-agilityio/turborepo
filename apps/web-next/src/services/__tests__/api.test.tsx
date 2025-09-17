@@ -20,6 +20,14 @@ describe('api service test', () => {
     global.fetch = jest.fn(() =>
       Promise.resolve({
         ok: true,
+        status: 200,
+        headers: {
+          get: jest.fn().mockImplementation((header) => {
+            if (header === 'content-type') return 'application/json'
+            if (header === 'content-length') return '12'
+            return null
+          })
+        },
         json: () => Promise.resolve({ test: 100 }),
       })
     ) as jest.Mock
@@ -98,6 +106,11 @@ describe('api service test', () => {
     global.fetch = jest.fn(() =>
       Promise.resolve({
         ok: false,
+        status: 400,
+        statusText: 'Bad Request',
+        headers: {
+          get: jest.fn().mockReturnValue(null)
+        },
         json: () => Promise.resolve(undefined),
       })
     ) as jest.Mock

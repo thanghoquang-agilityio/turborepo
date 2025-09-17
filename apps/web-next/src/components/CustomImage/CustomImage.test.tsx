@@ -11,6 +11,7 @@ import { CustomImage } from '..'
 // Mock next/image component
 jest.mock('next/image', () => {
   return jest.fn((props) => {
+    // eslint-disable-next-line @next/next/no-img-element
     return <img src={props.src} alt={props.alt} onError={props.onError} />
   })
 })

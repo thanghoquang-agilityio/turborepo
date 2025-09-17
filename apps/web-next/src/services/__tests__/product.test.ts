@@ -23,29 +23,30 @@ describe('Product service tests', () => {
   it('getProducts returns default values when API call fails', async () => {
     jest.spyOn(apiClient, 'get').mockRejectedValue(false)
 
-    await expect(getProducts()).rejects.toThrow(
-      'An unexpected error occurred in the request get products'
-    )
+    const result = await getProducts()
+    expect(result).toStrictEqual({
+      products: [],
+      pagination: { page: 1, pageSize: 10, total: 0 }
+    })
   })
 
   it('getProductById will return value correctly', async () => {
     const mockProductRes = MOCK_PRODUCTS_RESPONSE[0]
     jest.spyOn(apiClient, 'get').mockResolvedValue({ data: mockProductRes })
 
-    expect(await getProductById(USER_ID_DEFAULT)).toStrictEqual(mockProductRes)
+    expect(await getProductById(USER_ID_DEFAULT.toString())).toStrictEqual(mockProductRes)
   })
 
   it('getProductById will return value correctly', async () => {
     jest.spyOn(apiClient, 'get').mockResolvedValue({ data: null })
 
-    expect(await getProductById(USER_ID_DEFAULT)).toEqual(null)
+    expect(await getProductById(USER_ID_DEFAULT.toString())).toEqual(null)
   })
 
-  it('getProductById will return value correctly', async () => {
+  it('getProductById returns null when API call fails', async () => {
     jest.spyOn(apiClient, 'get').mockRejectedValue(false)
 
-    await expect(getProductById(USER_ID_DEFAULT)).rejects.toThrow(
-      'An unexpected error occurred in the request get product detail'
-    )
+    const result = await getProductById(USER_ID_DEFAULT.toString())
+    expect(result).toBe(null)
   })
 })

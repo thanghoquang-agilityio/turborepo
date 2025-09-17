@@ -3,10 +3,10 @@
 exports[`OrderSummary should match snapshot 1`] = `
 <div>
   <div
-    class="flex flex-col gap-4 bg-background-100 max-w-[305px]"
+    class="flex max-w-[305px] flex-col gap-4 bg-background-100"
   >
     <div
-      class="w-full bg-background-100 border-large border-background-300 rounded-medium"
+      class="w-full rounded-medium border-large border-background-300 bg-background-100"
     >
       <p
         class="text-primary-200 dark:text-primary-300 font-semibold text-lg no-underline text-ellipsis whitespace-nowrap overflow-hidden p-4 text-center"

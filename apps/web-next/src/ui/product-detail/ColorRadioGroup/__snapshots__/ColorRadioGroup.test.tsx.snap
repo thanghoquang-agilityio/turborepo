@@ -21,7 +21,7 @@ exports[`ColorRadioGroup should render with default props 1`] = `
     >
       <label
         aria-label="Radio Color"
-        class="group relative inline-flex cursor-pointer tap-highlight-transparent justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-success-200 p-0"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent m-0 h-[54px] w-[54px] max-w-[64px] items-center justify-center rounded-full border-[3px] capitalize sm:h-[64px] sm:w-[64px] border-success-200 p-0"
         data-selected="true"
       >
         <span
@@ -73,7 +73,7 @@ exports[`ColorRadioGroup should render with default props 1`] = `
       </label>
       <label
         aria-label="Radio Color"
-        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-background-100"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 m-0 h-[54px] w-[54px] max-w-[64px] items-center justify-center rounded-full border-[3px] capitalize sm:h-[64px] sm:w-[64px] border-background-100"
       >
         <span
           style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
@@ -102,7 +102,7 @@ exports[`ColorRadioGroup should render with default props 1`] = `
       </label>
       <label
         aria-label="Radio Color"
-        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-background-100"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 m-0 h-[54px] w-[54px] max-w-[64px] items-center justify-center rounded-full border-[3px] capitalize sm:h-[64px] sm:w-[64px] border-background-100"
       >
         <span
           style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
@@ -131,7 +131,7 @@ exports[`ColorRadioGroup should render with default props 1`] = `
       </label>
       <label
         aria-label="Radio Color"
-        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-background-100"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 m-0 h-[54px] w-[54px] max-w-[64px] items-center justify-center rounded-full border-[3px] capitalize sm:h-[64px] sm:w-[64px] border-background-100"
       >
         <span
           style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
@@ -160,7 +160,7 @@ exports[`ColorRadioGroup should render with default props 1`] = `
       </label>
       <label
         aria-label="Radio Color"
-        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 justify-center items-center max-w-[64px] sm:w-[64px] w-[54px] sm:h-[64px] h-[54px] m-0 capitalize rounded-full border-[3px] border-background-100"
+        class="group relative inline-flex cursor-pointer tap-highlight-transparent p-2 m-0 h-[54px] w-[54px] max-w-[64px] items-center justify-center rounded-full border-[3px] capitalize sm:h-[64px] sm:w-[64px] border-background-100"
       >
         <span
           style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"

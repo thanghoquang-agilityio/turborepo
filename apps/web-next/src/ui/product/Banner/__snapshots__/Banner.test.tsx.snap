@@ -3,10 +3,10 @@
 exports[`Banner should match snapshot 1`] = `
 <div>
   <div
-    class="relative flex flex-col sm:items-start items-center bg-linear-purple dark:bg-linear-black-green 2xl:rounded-large rounded-none md:h-[287px] sm:h-[180px] md:gap-[44px] sm:gap-[22px] gap-4 lg:pt-[65px] md:pt-[50px] pt-[20px] lg:pl-[135px] sm:pl-[75px]"
+    class="relative flex flex-col items-center gap-4 rounded-none bg-linear-purple pt-[20px] dark:bg-linear-black-green sm:h-[180px] sm:items-start sm:gap-[22px] sm:pl-[75px] md:h-[287px] md:gap-[44px] md:pt-[50px] lg:pl-[135px] lg:pt-[65px] 2xl:rounded-large"
   >
     <p
-      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-300 font-bold md:text-5xl text-2xl md:max-w-[377px] max-w-[261px] md:leading-10 whitespace-pre-wrap"
+      class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden max-w-[261px] whitespace-pre-wrap text-2xl font-bold text-primary-300 md:max-w-[377px] md:text-5xl md:leading-10"
     >
       Grab Upto 50% Off On Selected Headphone
     </p>
@@ -22,7 +22,7 @@ exports[`Banner should match snapshot 1`] = `
       </button>
       <img
         alt="e"
-        class="sm:absolute top-[18px] lg:right-[178px] sm:right-[68px] md:w-[244px] md:h-[269px] sm:w-[146px] sm:h-[161px] w-[96px] h-[104px]"
+        class="top-[18px] h-[104px] w-[96px] sm:absolute sm:right-[68px] sm:h-[161px] sm:w-[146px] md:h-[269px] md:w-[244px] lg:right-[178px]"
         data-nimg="1"
         decoding="async"
         fetchpriority="high"

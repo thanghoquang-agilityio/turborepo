@@ -3,21 +3,21 @@
 exports[`FilterList Component renders with default props 1`] = `
 <div>
   <div
-    class="flex flex-col gap-[30px] items-center max-w-[270px] "
+    class="flex max-w-[270px] flex-col items-center gap-[30px] "
   >
     <button
       aria-label="Button"
-      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover bg-background-100 w-full"
+      class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-default-foreground data-[hover=true]:opacity-hover w-full bg-background-100"
       data-focus="true"
       data-focus-visible="true"
       data-testid="btn-toggle-filter"
       type="button"
     >
       <div
-        class="flex justify-between w-full h-6"
+        class="flex h-6 w-full justify-between"
       >
         <p
-          class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-secondary-200 text-xl font-medium leading-5"
+          class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-xl font-medium leading-5 text-secondary-200"
         >
           Category
         </p>

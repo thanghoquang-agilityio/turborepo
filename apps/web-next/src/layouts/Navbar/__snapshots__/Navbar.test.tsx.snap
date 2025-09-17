@@ -3,7 +3,7 @@
 exports[`Navbar component Should match snapshot 1`] = `
 <div>
   <nav
-    class="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 border-b border-divider bg-background lg:min-h-[90px] md:min-h-[80px] min-h-[65px] xl:px-[80px] lg:px-[40px] md:px-[20px] px-[10px]"
+    class="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 border-b border-divider bg-background min-h-[65px] px-[10px] md:min-h-[80px] md:px-[20px] lg:min-h-[90px] lg:px-[40px] xl:px-[80px]"
     style="--navbar-height: 4rem;"
   >
     <header
@@ -30,7 +30,7 @@ exports[`Navbar component Should match snapshot 1`] = `
         </button>
       </ul>
       <ul
-        class="flex gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 sm:hidden pr-3"
+        class="flex gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 pr-3 sm:hidden"
         data-justify="center"
       >
         <div
@@ -40,7 +40,7 @@ exports[`Navbar component Should match snapshot 1`] = `
             href="/"
           >
             <p
-              class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-100 text-2xl font-extrabold leading-10 italic overflow-visible"
+              class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden overflow-visible text-2xl font-extrabold italic leading-10 text-primary-100"
             >
               FashionHub
             </p>
@@ -48,7 +48,7 @@ exports[`Navbar component Should match snapshot 1`] = `
         </div>
       </ul>
       <ul
-        class="h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex xl:gap-[50px] lg:gap-[40px] md:gap-[30px] gap-[20px]"
+        class="h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden gap-[20px] sm:flex md:gap-[30px] lg:gap-[40px] xl:gap-[50px]"
         data-justify="center"
       >
         <li
@@ -61,7 +61,7 @@ exports[`Navbar component Should match snapshot 1`] = `
               href="/"
             >
               <p
-                class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-100 lg:text-4xl text-3xl font-extrabold leading-10 italic overflow-visible"
+                class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden overflow-visible text-3xl font-extrabold italic leading-10 text-primary-100 lg:text-4xl"
               >
                 FashionHub
               </p>
@@ -135,7 +135,7 @@ exports[`Navbar component Should match snapshot 1`] = `
                 />
               </svg>
               <span
-                class="absolute z-40 md:top-[-2px] md:right-[-2px] md:w-5 md:h-5 top-[-5px] right-[-5px] w-4 h-4 bg-primary-100 rounded-full border border-background-100 text-background-100 text-center text-xs md:pt-0.5"
+                class="absolute right-[-5px] top-[-5px] z-40 h-4 w-4 rounded-full border border-background-100 bg-primary-100 text-center text-xs text-background-100 md:right-[-2px] md:top-[-2px] md:h-5 md:w-5 md:pt-0.5"
               >
                 7
               </span>
@@ -200,10 +200,10 @@ exports[`Navbar component Should match snapshot 1`] = `
           class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold"
         >
           <div
-            class="flex gap-[14px] items-center sm:flex hidden max-w-[190px] overflow-hidden"
+            class="flex items-center gap-[14px] sm:flex hidden max-w-[190px] overflow-hidden"
           >
             <span
-              class="flex relative justify-center items-center box-border overflow-hidden align-middle z-0 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-tiny text-default-foreground rounded-full bg-background-200 lg:h-[50px] lg:w-[50px] md:h-[40px] md:w-[40px] h-[30px] w-[30px]"
+              class="flex relative justify-center items-center box-border overflow-hidden align-middle z-0 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-tiny text-default-foreground rounded-full h-[30px] w-[30px] bg-background-200 md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"
               tabindex="-1"
             >
               <span
@@ -231,7 +231,7 @@ exports[`Navbar component Should match snapshot 1`] = `
               </span>
             </span>
             <div
-              class="flex flex-col gap-[7px] lg:flex hidden  max-w-[126px] overflow-hidden"
+              class="flex hidden max-w-[126px] flex-col gap-[7px] overflow-hidden lg:flex"
             >
               <p
                 class="text-foreground-300 font-normal  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-xs"
@@ -255,7 +255,7 @@ exports[`Navbar component Should match snapshot 1`] = `
 exports[`Navbar component Should match snapshot with error user 1`] = `
 <div>
   <nav
-    class="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 border-b border-divider bg-background lg:min-h-[90px] md:min-h-[80px] min-h-[65px] xl:px-[80px] lg:px-[40px] md:px-[20px] px-[10px]"
+    class="flex z-40 w-full h-auto items-center justify-center data-[menu-open=true]:border-none sticky top-0 inset-x-0 border-b border-divider bg-background min-h-[65px] px-[10px] md:min-h-[80px] md:px-[20px] lg:min-h-[90px] lg:px-[40px] xl:px-[80px]"
     style="--navbar-height: 4rem;"
   >
     <header
@@ -282,7 +282,7 @@ exports[`Navbar component Should match snapshot with error user 1`] = `
         </button>
       </ul>
       <ul
-        class="flex gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 sm:hidden pr-3"
+        class="flex gap-4 h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 pr-3 sm:hidden"
         data-justify="center"
       >
         <div
@@ -292,7 +292,7 @@ exports[`Navbar component Should match snapshot with error user 1`] = `
             href="/"
           >
             <p
-              class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-100 text-2xl font-extrabold leading-10 italic overflow-visible"
+              class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden overflow-visible text-2xl font-extrabold italic leading-10 text-primary-100"
             >
               FashionHub
             </p>
@@ -300,7 +300,7 @@ exports[`Navbar component Should match snapshot with error user 1`] = `
         </div>
       </ul>
       <ul
-        class="h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden sm:flex xl:gap-[50px] lg:gap-[40px] md:gap-[30px] gap-[20px]"
+        class="h-full flex-row flex-nowrap items-center data-[justify=start]:justify-start data-[justify=start]:flex-grow data-[justify=start]:basis-0 data-[justify=center]:justify-center data-[justify=end]:justify-end data-[justify=end]:flex-grow data-[justify=end]:basis-0 hidden gap-[20px] sm:flex md:gap-[30px] lg:gap-[40px] xl:gap-[50px]"
         data-justify="center"
       >
         <li
@@ -313,7 +313,7 @@ exports[`Navbar component Should match snapshot with error user 1`] = `
               href="/"
             >
               <p
-                class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-primary-100 lg:text-4xl text-3xl font-extrabold leading-10 italic overflow-visible"
+                class="  no-underline text-ellipsis whitespace-nowrap overflow-hidden overflow-visible text-3xl font-extrabold italic leading-10 text-primary-100 lg:text-4xl"
               >
                 FashionHub
               </p>
@@ -387,7 +387,7 @@ exports[`Navbar component Should match snapshot with error user 1`] = `
                 />
               </svg>
               <span
-                class="absolute z-40 md:top-[-2px] md:right-[-2px] md:w-5 md:h-5 top-[-5px] right-[-5px] w-4 h-4 bg-primary-100 rounded-full border border-background-100 text-background-100 text-center text-xs md:pt-0.5"
+                class="absolute right-[-5px] top-[-5px] z-40 h-4 w-4 rounded-full border border-background-100 bg-primary-100 text-center text-xs text-background-100 md:right-[-2px] md:top-[-2px] md:h-5 md:w-5 md:pt-0.5"
               >
                 0
               </span>
@@ -452,10 +452,10 @@ exports[`Navbar component Should match snapshot with error user 1`] = `
           class="text-medium whitespace-nowrap box-border list-none data-[active=true]:font-semibold"
         >
           <div
-            class="flex gap-[14px] items-center sm:flex hidden max-w-[190px] overflow-hidden"
+            class="flex items-center gap-[14px] sm:flex hidden max-w-[190px] overflow-hidden"
           >
             <span
-              class="flex relative justify-center items-center box-border overflow-hidden align-middle z-0 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-tiny text-default-foreground rounded-full bg-background-200 lg:h-[50px] lg:w-[50px] md:h-[40px] md:w-[40px] h-[30px] w-[30px]"
+              class="flex relative justify-center items-center box-border overflow-hidden align-middle z-0 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-tiny text-default-foreground rounded-full h-[30px] w-[30px] bg-background-200 md:h-[40px] md:w-[40px] lg:h-[50px] lg:w-[50px]"
               tabindex="-1"
             >
               <span
@@ -483,7 +483,7 @@ exports[`Navbar component Should match snapshot with error user 1`] = `
               </span>
             </span>
             <div
-              class="flex flex-col gap-[7px] lg:flex hidden  max-w-[126px] overflow-hidden"
+              class="flex hidden max-w-[126px] flex-col gap-[7px] overflow-hidden lg:flex"
             >
               <p
                 class="text-foreground-300 font-normal  no-underline text-ellipsis whitespace-nowrap overflow-hidden text-xs"

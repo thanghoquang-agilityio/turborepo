@@ -64,7 +64,7 @@ export class ApiClient {
     return data
   }
 
-  async delete<T>(url: string, config?: RequestInit): Promise<T> {
+  async delete<T>(url: string, config?: RequestInit): Promise<T | null> {
     const response = await this.fetchWithConfig(url, {
       ...config,
       method: 'DELETE',
@@ -74,8 +74,22 @@ export class ApiClient {
       throw new Error(`Failed to delete: ${response.statusText}`)
     }
 
-    const data: T = await response.json()
-    return data
+    // Check if response has content before trying to parse JSON
+    const contentLength = response.headers.get('content-length')
+    const contentType = response.headers.get('content-type')
+    
+    if (contentLength === '0' || response.status === 204 || !contentType?.includes('application/json')) {
+      // Return a success indicator for empty responses
+      return { success: true, status: response.status } as T
+    }
+
+    try {
+      const data: T = await response.json()
+      return data
+    } catch (error) {
+      // If JSON parsing fails but response was successful, return success indicator
+      return { success: true, status: response.status } as T
+    }
   }
 
   fetchWithConfig(url: string, config?: RequestInit) {

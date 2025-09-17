@@ -3,7 +3,7 @@
 exports[`Pagination component Should match snapshot 1`] = `
 <div>
   <div
-    class="w-full flex gap-2 justify-center md:justify-center items-center md:m-0"
+    class="flex w-full items-center justify-center gap-2 md:m-0 md:justify-center"
   >
     <button
       aria-label="Button"
@@ -42,7 +42,7 @@ exports[`Pagination component Should match snapshot 1`] = `
 exports[`Pagination component Should match total count less than page size 1`] = `
 <div>
   <div
-    class="w-full flex gap-2 justify-center md:justify-center items-center md:m-0"
+    class="flex w-full items-center justify-center gap-2 md:m-0 md:justify-center"
   >
     <button
       aria-label="Button"

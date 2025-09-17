@@ -3,26 +3,26 @@
 exports[`MediaPreview should match snapshot 1`] = `
 <div>
   <div
-    class="flex flex-col gap-4 lg:gap-[37px] h-full items-center"
+    class="flex h-full flex-col items-center gap-4 lg:gap-[37px]"
   >
     <div
-      class="flex justify-center w-full xl:max-w-[587px] lg:max-w-[498px] lg:h-auto md:h-[525px] sm:h-[450px] h-[375px] rounded-[17px] overflow-hidden"
+      class="flex h-[375px] w-full justify-center overflow-hidden rounded-[17px] sm:h-[450px] md:h-[525px] lg:h-auto lg:max-w-[498px] xl:max-w-[587px]"
     >
       <img
         alt="default4"
-        class="xl:h-[691px] lg:h-[600px] md:h-[525px] sm:h-[450px] h-[375px] rounded-[17px]"
+        class="h-[375px] rounded-[17px] sm:h-[450px] md:h-[525px] lg:h-[600px] xl:h-[691px]"
         data-nimg="1"
         decoding="async"
         fetchpriority="high"
         height="691"
-        src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=1200&q=75"
-        srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=1200&q=75 2x"
+        src="http://localhost/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=1200&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=1200&q=75 2x"
         style="color: transparent; object-fit: cover;"
         width="587"
       />
     </div>
     <div
-      class="flex sm:hidden lg:gap-2.5 items-center gap-4"
+      class="flex items-center gap-4 sm:hidden lg:gap-2.5"
     >
       <button
         aria-label="Button Icon"
@@ -78,7 +78,7 @@ exports[`MediaPreview should match snapshot 1`] = `
       </button>
     </div>
     <div
-      class="hidden sm:flex lg:gap-2.5 items-center"
+      class="hidden items-center sm:flex lg:gap-2.5"
     >
       <button
         aria-label="Button Icon"
@@ -106,72 +106,72 @@ exports[`MediaPreview should match snapshot 1`] = `
         />
       </button>
       <div
-        class="sm:flex xl:gap-5 sm:gap-3"
+        class="sm:flex sm:gap-3 xl:gap-5"
       >
         <button
-          class="relative xl:h-[115px] xl:w-[115px] sm:h-[106px] sm:w-[106px] flex justify-center items-center rounded-[14px]"
+          class="relative flex items-center justify-center rounded-[14px] sm:h-[106px] sm:w-[106px] xl:h-[115px] xl:w-[115px]"
           data-testid="thumbnail-item-0"
         >
           <img
             alt="default1"
-            class="w-full h-full p-[3px] rounded-[14px]"
+            class="h-full w-full rounded-[14px] p-[3px]"
             data-nimg="1"
             decoding="async"
-            fetchpriority="high"
             height="115"
-            src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
-            srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
+            loading="lazy"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
             style="color: transparent; object-fit: cover;"
             width="115"
           />
         </button>
         <button
-          class="relative xl:h-[115px] xl:w-[115px] sm:h-[106px] sm:w-[106px] flex justify-center items-center rounded-[14px]"
+          class="relative flex items-center justify-center rounded-[14px] sm:h-[106px] sm:w-[106px] xl:h-[115px] xl:w-[115px]"
           data-testid="thumbnail-item-1"
         >
           <img
             alt="default2"
-            class="w-full h-full p-[3px] rounded-[14px]"
+            class="h-full w-full rounded-[14px] p-[3px]"
             data-nimg="1"
             decoding="async"
-            fetchpriority="high"
             height="115"
-            src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
-            srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
+            loading="lazy"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
             style="color: transparent; object-fit: cover;"
             width="115"
           />
         </button>
         <button
-          class="relative xl:h-[115px] xl:w-[115px] sm:h-[106px] sm:w-[106px] flex justify-center items-center rounded-[14px]"
+          class="relative flex items-center justify-center rounded-[14px] sm:h-[106px] sm:w-[106px] xl:h-[115px] xl:w-[115px]"
           data-testid="thumbnail-item-2"
         >
           <img
             alt="default3"
-            class="w-full h-full p-[3px] rounded-[14px]"
+            class="h-full w-full rounded-[14px] p-[3px]"
             data-nimg="1"
             decoding="async"
-            fetchpriority="high"
             height="115"
-            src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
-            srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
+            loading="lazy"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
             style="color: transparent; object-fit: cover;"
             width="115"
           />
         </button>
         <button
-          class="relative xl:h-[115px] xl:w-[115px] sm:h-[106px] sm:w-[106px] flex justify-center items-center rounded-[14px] bg-linear-blue dark:bg-linear-white"
+          class="relative flex items-center justify-center rounded-[14px] sm:h-[106px] sm:w-[106px] xl:h-[115px] xl:w-[115px] bg-linear-blue dark:bg-linear-white"
           data-testid="thumbnail-item-3"
         >
           <img
             alt="default4"
-            class="w-full h-full p-[3px] rounded-[14px]"
+            class="h-full w-full rounded-[14px] p-[3px]"
             data-nimg="1"
             decoding="async"
-            fetchpriority="high"
             height="115"
-            src="http://localhost/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
-            srcset="/_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fnext-js-p6iu.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
+            loading="lazy"
+            src="http://localhost/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fe-commerce-api-2t2h.onrender.com%2Fimages%2Fimage-not-available.webp&w=256&q=75 2x"
             style="color: transparent; object-fit: cover;"
             width="115"
           />

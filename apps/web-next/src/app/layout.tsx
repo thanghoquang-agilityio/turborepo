@@ -35,7 +35,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: ReactNode
 }>) {
-  const user = await getUserById(USER_ID_DEFAULT)
+  const user = await getUserById(USER_ID_DEFAULT.toString())
+
   return (
     <html lang='en'>
       <body className={inter.className}>

@@ -3,7 +3,7 @@
 exports[`SelectMultiple Component renders with default props 1`] = `
 <div>
   <div
-    class="group flex flex-col w-full transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-primary-200 font-medium text-sm"
+    class="group flex flex-col w-full transition-background motion-reduce:transition-none !duration-150 group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] rounded-[28px] opacity-100 bg-background-400 text-sm font-medium text-primary-200"
     data-filled="true"
     data-slot="base"
   >
