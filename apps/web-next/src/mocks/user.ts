@@ -1,4 +1,4 @@
-import { UserModel } from '@/types'
+import type { UserModel } from '@/types'
 
 import { MOCK_IMAGE } from './image'
 

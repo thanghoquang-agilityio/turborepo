@@ -1,5 +1,5 @@
 import { API_IMAGE_URL } from '@/constants'
-import { ImageExtension } from '@/types'
+import type { ImageExtension } from '@/types'
 
 import { generateImageURL, getStars } from '../common'
 

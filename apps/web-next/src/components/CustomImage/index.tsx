@@ -2,7 +2,7 @@
 
 import { memo, useState } from 'react'
 
-import Image, { ImageProps } from 'next/image'
+import Image, { type ImageProps } from 'next/image'
 
 // Constants
 import { IMAGE_NOT_AVAILABLE, SRC_IMAGE_NOT_AVAILABLE } from '@/constants'

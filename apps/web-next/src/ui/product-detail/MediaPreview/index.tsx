@@ -8,7 +8,7 @@ import { ButtonIcon, CustomImage } from '@/components'
 import { API_IMAGE_URL } from '@/constants'
 import { ArrowLeftIcon, ArrowRightIcon } from '@/icons'
 // Types
-import { ImageModel } from '@/types'
+import type { ImageModel } from '@/types'
 
 import { ThumbnailItem } from './ThumbnailItem'
 

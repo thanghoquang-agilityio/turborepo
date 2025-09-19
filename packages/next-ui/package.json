@@ -1,0 +1,66 @@
+{
+  "name": "@repo/next-ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./button": "./src/button.tsx",
+    "./button-icon": "./src/button-icon.tsx",
+    "./text": "./src/text.tsx",
+    "./select-multiple": "./src/select-multiple.tsx",
+    "./filter-list": "./src/filter-list.tsx",
+    "./color-radio-group": "./src/color-radio-group.tsx",
+    "./size-radio-group": "./src/size-radio-group.tsx",
+    "./in-view": "./src/in-view.tsx",
+    "./profile": "./src/profile.tsx",
+    "./pagination": "./src/pagination.tsx",
+    "./cva": "./src/cva.ts",
+    "./theme": "./src/theme.ts",
+    "./themes": "./src/themes/index.ts",
+    "./themes/colors": "./src/themes/colors.ts",
+    "./themes/fonts": "./src/themes/fonts.ts",
+    "./styles": "./src/styles.css"
+  },
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src/",
+    "clean": "rm -rf dist .turbo node_modules/.cache",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "next-themes": "^0.3.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
+    "@repo/tsconfig": "workspace:*",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/addon-links": "^8.6.14",
+    "@storybook/addon-onboarding": "^8.6.14",
+    "@storybook/blocks": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-webpack5": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "storybook": "^8.6.14",
+    "tailwindcss": "^3.4.13",
+    "postcss": "^8.4.47",
+    "autoprefixer": "^10.4.20",
+    "postcss-loader": "^8.1.1",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.4.6",
+    "@nextui-org/system": "^2.2.5",
+    "@repo/hooks": "workspace:*",
+    "framer-motion": "^11.5.6",
+    "react-intersection-observer": "^9.13.0"
+  }
+}

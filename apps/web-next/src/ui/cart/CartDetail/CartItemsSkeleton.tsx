@@ -1,4 +1,4 @@
-import { Skeleton } from '@nextui-org/react'
+import { Skeleton } from '@repo/next-ui'
 
 import { PAGE_SIZE_DEFAULT, borderStyle } from '@/constants'
 // Styles

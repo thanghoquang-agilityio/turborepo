@@ -1,10 +1,10 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
 
 import { Inter } from 'next/font/google'
 
-import { NextUIProvider } from '@nextui-org/system'
+import { NextUIProvider } from '@repo/next-ui'
 import { ThemeProvider } from 'next-themes'
 
 // Constants

@@ -3,7 +3,7 @@ import { act } from 'react'
 import { renderHook } from '@testing-library/react'
 
 // Adjust the import path
-import { CartItemResponse } from '@/types'
+import type { CartItemResponse } from '@/types'
 
 import { useOrderSummary } from '..'
 

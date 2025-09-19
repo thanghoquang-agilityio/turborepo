@@ -8,7 +8,7 @@ import { useOrderSummary } from '@/hooks'
 // Styles
 import '@/styles/card-list.css'
 // Types
-import { CartItemResponse } from '@/types'
+import type { CartItemResponse } from '@/types'
 import { Content } from '@/components'
 
 // Components

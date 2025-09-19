@@ -2,7 +2,7 @@
 
 import { useOptimistic } from 'react'
 
-import { CartItemResponse } from '@/types'
+import type { CartItemResponse } from '@/types'
 import { calculateAmount } from '@/utils'
 
 export const useOrderSummary = (cartItems: CartItemResponse[]) => {

@@ -3,7 +3,7 @@
 // Types
 // Components
 import { Button, Text } from '@/components'
-import { PageErrorProps } from '@/types'
+import type { PageErrorProps } from '@/types'
 
 const error = ({ error, reset }: PageErrorProps) => {
   return (

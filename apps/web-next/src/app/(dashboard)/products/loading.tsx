@@ -1,6 +1,6 @@
 import { headers } from 'next/headers'
 
-import { Skeleton } from '@nextui-org/react'
+import { Skeleton } from '@repo/next-ui'
 
 import { ProductListSkeleton } from '@/ui/product/ProductList/ProductListSkeleton'
 

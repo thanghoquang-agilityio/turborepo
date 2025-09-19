@@ -1,6 +1,6 @@
 // Constants
 // Components
-import { Skeleton } from '@nextui-org/react'
+import { Skeleton } from '@repo/next-ui'
 
 import { borderStyle } from '@/constants'
 // Styles

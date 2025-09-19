@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 // Constants
 import { COMMENTS_DEFAULT, IMAGE_DEFAULT, STAR_DEFAULT } from '@/constants'
 // Types
-import { ImageModel, ProductModel, ProductVariantModel } from '@/types'
+import type { ImageModel, ProductModel, ProductVariantModel } from '@/types'
 
 const MediaPreview = dynamic(() => import('@/ui/product-detail/MediaPreview'))
 const ProductHeaderInfo = dynamic(

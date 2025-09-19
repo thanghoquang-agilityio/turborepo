@@ -252,7 +252,7 @@ module.exports = {
 NextUI provides pre-built components with consistent design:
 
 ```typescript
-import { Button, Card, Input } from '@nextui-org/react'
+import { Button, Card, Input } from '@repo/next-ui'
 ```
 
 ## 📱 Responsive Design

@@ -1,0 +1,35 @@
+{
+  "name": "@repo/shadcn-ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./alert": "./src/alert.tsx",
+    "./badge": "./src/badge.tsx",
+    "./sidebar": "./src/sidebar.tsx",
+    "./cva": "./src/cva.ts",
+    "./button": "./src/button.tsx",
+    "./card": "./src/card.tsx",
+    "./input": "./src/input.tsx",
+    "./styles": "./src/styles.css"
+  },
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src/",
+    "clean": "rm -rf dist .turbo node_modules/.cache"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "lucide-react": "^0.544.0"
+  }
+}

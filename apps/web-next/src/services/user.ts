@@ -1,6 +1,6 @@
 import { API_ENDPOINT } from '@/constants'
 import { apiClient } from '@/services'
-import { UserModel } from '@/types'
+import type { UserModel } from '@/types'
 
 export const getUserById = async (id: string): Promise<UserModel | null> => {
   try {

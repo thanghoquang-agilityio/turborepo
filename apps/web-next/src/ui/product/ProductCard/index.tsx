@@ -3,7 +3,7 @@ import { memo, useCallback } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
-import { Card } from '@nextui-org/react'
+import { Card } from '@repo/next-ui'
 
 // Components
 import { Button, ButtonIcon, CustomImage, Text } from '@/components'

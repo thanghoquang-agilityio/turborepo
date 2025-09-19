@@ -1,4 +1,4 @@
-import { Skeleton } from '@nextui-org/react'
+import { Skeleton } from '@repo/next-ui'
 
 export const MediaPreviewImageSkeleton = () => (
   <div className='img-preview my-[30px] h-auto lg:my-0'>

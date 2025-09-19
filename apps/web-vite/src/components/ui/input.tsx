@@ -1,2 +1,2 @@
-// Re-export the shared Input component from @repo/ui
-export { Input } from '@repo/ui/input'
+// Re-export the shared Input component from @repo/shadcn-ui
+export { Input } from '@repo/shadcn-ui/input'

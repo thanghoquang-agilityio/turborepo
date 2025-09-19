@@ -17,7 +17,7 @@ import {
   StarLineIcon,
 } from '@/icons'
 // Types
-import { ProductVariantModel } from '@/types'
+import type { ProductVariantModel } from '@/types'
 // Utils
 import { calculateAmount, formatAmountCurrency, getSizeVariants } from '@/utils'
 

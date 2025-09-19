@@ -13,7 +13,7 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
   Navbar as NextUINavbar,
-} from '@nextui-org/react'
+} from '@repo/next-ui'
 import { useTheme } from 'next-themes'
 
 import { ButtonIcon, Profile, Text } from '@/components'
@@ -21,7 +21,7 @@ import { ButtonIcon, Profile, Text } from '@/components'
 import { NAVBAR_LIST, ROUTER } from '@/constants'
 import { BrightnessIcon, MoonIcon, ShoppingBagIcon } from '@/icons'
 // Types
-import { NavbarItemProps, UserModel } from '@/types'
+import type { NavbarItemProps, UserModel } from '@/types'
 
 export const Navbar = memo(({ user }: { user: UserModel | null }) => {
   const { username = '', cartItems = [] } = user || {}

@@ -3,7 +3,7 @@
 import { memo } from 'react'
 
 // Components
-import { BreadcrumbItem, Breadcrumbs } from '@nextui-org/react'
+import { BreadcrumbItem, Breadcrumbs } from '@repo/next-ui'
 
 // Constants
 import { ROUTER } from '@/constants'

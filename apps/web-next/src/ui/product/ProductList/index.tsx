@@ -6,9 +6,9 @@ import dynamic from 'next/dynamic'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 
 // Components
-import { Skeleton } from '@nextui-org/react'
+import { Skeleton } from '@repo/next-ui'
 
-import { Button, Content, Text } from '@/components'
+import { Button, Content, Text, SelectMultiple } from '@/components'
 import {
   COMMENTS_DEFAULT,
   PAGE_DEFAULT,
@@ -18,16 +18,13 @@ import {
 // Styles
 import '@/styles/card-list.css'
 // Types
-import { FilterItem, MetaResponse, ProductModel } from '@/types'
+import type { FilterItem, MetaResponse, ProductModel } from '@/types'
 
 import { ProductCardListSkeleton } from './ProductCardListSkeleton'
 
 const FilterList = dynamic(() => import('@/components/FilterList'))
 const ProductCard = dynamic(() => import('../ProductCard'))
 const Pagination = dynamic(() => import('@/components/Pagination'))
-const SelectMultiple = dynamic(
-  () => import('@/components/common/SelectMultiple')
-)
 
 interface ProductListProps extends MetaResponse {
   products: ProductModel[]

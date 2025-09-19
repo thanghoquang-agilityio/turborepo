@@ -3,7 +3,7 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
-// Re-export the shared Card components from @repo/ui
+// Re-export the shared Card components from @repo/shadcn-ui
 export {
   Card,
   CardHeader,
@@ -11,7 +11,7 @@ export {
   CardTitle,
   CardDescription,
   CardContent,
-} from '@repo/ui/card'
+} from '@repo/shadcn-ui/card'
 
 function CardAction({ className, ...props }: React.ComponentProps<'div'>) {
   return (

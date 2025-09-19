@@ -1,4 +1,4 @@
-import { CartItemResponse } from '@/types'
+import type { CartItemResponse } from '@/types'
 import { MOCK_PRODUCT_VARIANTS } from './product'
 
 export const MOCK_CART_ITEM = {

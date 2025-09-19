@@ -1,6 +1,6 @@
 import { memo } from 'react'
 
-import { Textarea } from '@nextui-org/react'
+import { Textarea } from '@repo/next-ui'
 
 // Components
 import { Button, Text } from '@/components'

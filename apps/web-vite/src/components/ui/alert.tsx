@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { type VariantProps, cva } from '@repo/ui/cva'
+import { type VariantProps, cva } from '@repo/shadcn-ui/cva'
 
 import { cn } from '@/lib/utils'
 

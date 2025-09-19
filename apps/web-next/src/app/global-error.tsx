@@ -8,7 +8,7 @@ import { Navbar } from '@/layouts'
 // Styles
 import '@/styles/globals.css'
 // Types
-import { PageErrorProps } from '@/types'
+import type { PageErrorProps } from '@/types'
 
 const inter = Inter({ subsets: ['latin'] })
 

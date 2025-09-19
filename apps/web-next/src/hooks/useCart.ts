@@ -14,7 +14,7 @@ import { CART_MESSAGES } from '@/constants'
 import { useToast } from '@/context/toast'
 import { TOAST_TYPE } from '@/hocs/withToast'
 // Types
-import { CartItemPayload } from '@/types'
+import type { CartItemPayload } from '@/types'
 
 export const useCart = () => {
   const openToast = useToast()
@@ -53,7 +53,7 @@ export const useCart = () => {
         })
 
         return isSuccess
-      } catch (error) {
+      } catch (_error) {
         
         const { FAILED } = CART_MESSAGES.REMOVE
         

@@ -86,7 +86,7 @@ export class ApiClient {
     try {
       const data: T = await response.json()
       return data
-    } catch (error) {
+    } catch (_error) {
       // If JSON parsing fails but response was successful, return success indicator
       return { success: true, status: response.status } as T
     }

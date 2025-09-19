@@ -2,7 +2,7 @@
 
 import { memo, useCallback, useMemo, useState } from 'react'
 
-import { Card as CardNextUI, Spinner } from '@nextui-org/react'
+import { Card as CardNextUI, Spinner } from '@repo/next-ui'
 
 // Components
 import { Button, CustomImage, Text } from '@/components'
@@ -14,7 +14,7 @@ import { CloseIcon, MinusIcon, PlusIcon } from '@/icons'
 // Styles
 import '@/styles/card.css'
 // Types
-import { CartItemResponse } from '@/types'
+import type { CartItemResponse } from '@/types'
 // Utils
 import { calculateAmount, formatAmountCurrency } from '@/utils'
 

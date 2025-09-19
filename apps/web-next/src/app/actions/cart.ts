@@ -7,7 +7,7 @@ import {
   deleteCartItem as deleteCartItemSV,
   updateCartItem as updateCartItemSV,
 } from '@/services'
-import { CartItemPayload } from '@/types'
+import type { CartItemPayload } from '@/types'
 
 export const createOrUpdateCartItem = async (cartItem: CartItemPayload) => {
   const searchParams = new URLSearchParams()

@@ -1,2 +1,2 @@
-// Re-export the shared Button component from @repo/ui
-export { Button, buttonVariants } from '@repo/ui/button'
+// Re-export the shared Button component from @repo/shadcn-ui
+export { Button, buttonVariants } from '@repo/shadcn-ui/button'

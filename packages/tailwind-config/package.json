@@ -1,0 +1,19 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./base": "./src/base.js",
+    "./nextui": "./src/nextui.js"
+  },
+  "files": [
+    "src/**"
+  ],
+  "dependencies": {
+    "tailwindcss": "^3.4.13",
+    "@nextui-org/theme": "^2.2.9"
+  }
+}

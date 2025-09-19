@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 
 import { MOCK_CART_RESPONSE } from '@/mocks'
-import { CartItemResponse } from '@/types'
+import type { CartItemResponse } from '@/types'
 
 import CartDetail from '.'
 

@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Slot } from '@radix-ui/react-slot'
 
-import { VariantProps, cva } from '@repo/ui/cva'
+import { VariantProps, cva } from '@repo/shadcn-ui/cva'
 import { PanelLeftIcon } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
