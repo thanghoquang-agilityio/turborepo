@@ -4,14 +4,14 @@ import { useState } from 'react'
 
 import { type Table } from '@tanstack/react-table'
 
-import { AlertTriangle } from 'lucide-react'
-import { toast } from 'sonner'
+import { AlertTriangle } from '@repo/shadcn-ui/lucide-react'
+import { toast } from '@repo/shadcn-ui/sonner'
 
 import { sleep } from '@/lib/utils'
 
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { Alert, AlertDescription, AlertTitle } from '@repo/shadcn-ui/alert'
+import { Input } from '@repo/shadcn-ui/input'
+import { Label } from '@repo/shadcn-ui/label'
 
 import { ConfirmDialog } from '@/components/confirm-dialog'
 

@@ -8,9 +8,9 @@ import { zodResolver } from '@hookform/resolvers/zod'
 
 import { IconFacebook, IconGithub } from '@/assets/brand-icons'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 import {
   Form,
   FormControl,
@@ -18,8 +18,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
+} from '@/components/form'
+import { Input } from '@repo/shadcn-ui/input'
 
 import { PasswordInput } from '@/components/password-input'
 

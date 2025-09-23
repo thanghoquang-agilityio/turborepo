@@ -2,18 +2,18 @@ import { type ChangeEvent, useState } from 'react'
 
 import { getRouteApi } from '@tanstack/react-router'
 
-import { ArrowDownAZ, ArrowUpAZ, SlidersHorizontal } from 'lucide-react'
+import { ArrowDownAZ, ArrowUpAZ, SlidersHorizontal } from '@repo/shadcn-ui/lucide-react'
 
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { Button } from '@repo/shadcn-ui/button'
+import { Input } from '@repo/shadcn-ui/input'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
-import { Separator } from '@/components/ui/separator'
+} from '@repo/shadcn-ui/select'
+import { Separator } from '@repo/shadcn-ui/separator'
 
 import { ConfigDrawer } from '@/components/config-drawer'
 import { Header } from '@/components/layout/header'

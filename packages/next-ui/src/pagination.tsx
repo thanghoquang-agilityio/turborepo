@@ -4,7 +4,8 @@ import { memo, useCallback } from 'react'
 
 import { Button } from './button'
 import { Text } from './text'
-import { DOTS, usePagination } from '@repo/hooks'
+
+import { DOTS, usePagination } from '@repo/hooks/use-pagination'
 
 interface PaginationProps {
   onPageChange?: (page: number) => void

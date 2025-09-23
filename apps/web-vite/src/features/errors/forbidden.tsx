@@ -1,6 +1,6 @@
 import { useNavigate, useRouter } from '@tanstack/react-router'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 
 export function ForbiddenError() {
   const navigate = useNavigate()

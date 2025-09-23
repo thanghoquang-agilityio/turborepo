@@ -1,4 +1,4 @@
-import { Telescope } from 'lucide-react'
+import { Telescope } from '@repo/shadcn-ui/lucide-react'
 
 export function ComingSoon() {
   return (

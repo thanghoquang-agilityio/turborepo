@@ -1,6 +1,6 @@
 import { AxiosError } from 'axios'
 
-import { toast } from 'sonner'
+import { toast } from '@repo/shadcn-ui/sonner'
 
 export function handleServerError(error: unknown) {
   // eslint-disable-next-line no-console

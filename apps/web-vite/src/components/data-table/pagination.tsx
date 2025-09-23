@@ -3,20 +3,20 @@ import {
   ChevronRightIcon,
   DoubleArrowLeftIcon,
   DoubleArrowRightIcon,
-} from '@radix-ui/react-icons'
+} from '@repo/shadcn-ui/icons'
 
 import { type Table } from '@tanstack/react-table'
 
 import { cn, getPageNumbers } from '@/lib/utils'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
+} from '@repo/shadcn-ui/select'
 
 type DataTablePaginationProps<TData> = {
   table: Table<TData>

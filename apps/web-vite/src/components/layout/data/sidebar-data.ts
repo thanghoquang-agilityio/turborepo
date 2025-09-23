@@ -1,18 +1,13 @@
 import {
-  AudioWaveform,
   Bell,
   Bug,
   Command,
   Construction,
   FileX,
-  GalleryVerticalEnd,
   HelpCircle,
   LayoutDashboard,
-  ListTodo,
   Lock,
-  MessagesSquare,
   Monitor,
-  Package,
   Palette,
   ServerOff,
   Settings,
@@ -21,9 +16,7 @@ import {
   UserX,
   Users,
   Wrench,
-} from 'lucide-react'
-
-import { ClerkLogo } from '@/assets/clerk-logo'
+} from '@repo/shadcn-ui/lucide-react'
 
 import { type SidebarData } from '../types'
 
@@ -38,17 +31,7 @@ export const sidebarData: SidebarData = {
       name: 'Shadcn Admin',
       logo: Command,
       plan: 'Vite + ShadcnUI',
-    },
-    {
-      name: 'Acme Inc',
-      logo: GalleryVerticalEnd,
-      plan: 'Enterprise',
-    },
-    {
-      name: 'Acme Corp.',
-      logo: AudioWaveform,
-      plan: 'Startup',
-    },
+    }
   ],
   navGroups: [
     {
@@ -60,43 +43,9 @@ export const sidebarData: SidebarData = {
           icon: LayoutDashboard,
         },
         {
-          title: 'Tasks',
-          url: '/tasks',
-          icon: ListTodo,
-        },
-        {
-          title: 'Apps',
-          url: '/apps',
-          icon: Package,
-        },
-        {
-          title: 'Chats',
-          url: '/chats',
-          badge: '3',
-          icon: MessagesSquare,
-        },
-        {
           title: 'Users',
           url: '/users',
           icon: Users,
-        },
-        {
-          title: 'Secured by Clerk',
-          icon: ClerkLogo,
-          items: [
-            {
-              title: 'Sign In',
-              url: '/clerk/sign-in',
-            },
-            {
-              title: 'Sign Up',
-              url: '/clerk/sign-up',
-            },
-            {
-              title: 'User Management',
-              url: '/clerk/user-management',
-            },
-          ],
         },
       ],
     },
@@ -112,21 +61,9 @@ export const sidebarData: SidebarData = {
               url: '/sign-in',
             },
             {
-              title: 'Sign In (2 Col)',
-              url: '/sign-in-2',
-            },
-            {
               title: 'Sign Up',
               url: '/sign-up',
-            },
-            {
-              title: 'Forgot Password',
-              url: '/forgot-password',
-            },
-            {
-              title: 'OTP',
-              url: '/otp',
-            },
+            }
           ],
         },
         {

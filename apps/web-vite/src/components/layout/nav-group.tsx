@@ -2,13 +2,13 @@ import { type ReactNode } from 'react'
 
 import { Link, useLocation } from '@tanstack/react-router'
 
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight } from '@repo/shadcn-ui/lucide-react'
 
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from '@/components/ui/collapsible'
+} from '@repo/shadcn-ui/collapsible'
 import {
   SidebarGroup,
   SidebarGroupLabel,
@@ -19,9 +19,9 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
   useSidebar,
-} from '@/components/ui/sidebar'
+} from '@repo/shadcn-ui/sidebar'
 
-import { Badge } from '../ui/badge'
+import { Badge } from '@repo/shadcn-ui/badge'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,7 +29,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '../ui/dropdown-menu'
+} from '@repo/shadcn-ui/dropdown-menu'
 import {
   type NavCollapsible,
   type NavGroup as NavGroupProps,

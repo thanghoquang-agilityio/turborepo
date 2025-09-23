@@ -1,4 +1,4 @@
-import { useLayout } from '@/context/layout-provider'
+import { useLayout } from '@repo/shadcn-ui/themes/layout-provider'
 
 import {
   Sidebar,
@@ -6,7 +6,7 @@ import {
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from '@/components/ui/sidebar'
+} from '@repo/shadcn-ui/sidebar'
 
 // import { AppTitle } from './app-title'
 import { sidebarData } from './data/sidebar-data'

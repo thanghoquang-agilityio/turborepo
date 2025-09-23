@@ -1,8 +1,8 @@
 import { Outlet } from '@tanstack/react-router'
 
-import { Bell, Monitor, Palette, UserCog, Wrench } from 'lucide-react'
+import { Bell, Monitor, Palette, UserCog, Wrench } from '@repo/shadcn-ui/lucide-react'
 
-import { Separator } from '@/components/ui/separator'
+import { Separator } from '@repo/shadcn-ui/separator'
 
 import { ConfigDrawer } from '@/components/config-drawer'
 import { Header } from '@/components/layout/header'

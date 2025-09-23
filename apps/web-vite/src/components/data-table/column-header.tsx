@@ -3,20 +3,20 @@ import {
   ArrowUpIcon,
   CaretSortIcon,
   EyeNoneIcon,
-} from '@radix-ui/react-icons'
+} from '@repo/shadcn-ui/icons'
 
 import { type Column } from '@tanstack/react-table'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@repo/shadcn-ui/dropdown-menu'
 
 type DataTableColumnHeaderProps<TData, TValue> =
   React.HTMLAttributes<HTMLDivElement> & {

@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
 import {
   AlertDialog,
@@ -8,8 +8,8 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from '@/components/ui/alert-dialog'
-import { Button } from '@/components/ui/button'
+} from '@repo/shadcn-ui/alert-dialog'
+import { Button } from '@repo/shadcn-ui/button'
 
 type ConfirmDialogProps = {
   open: boolean

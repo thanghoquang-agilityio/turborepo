@@ -13,7 +13,7 @@ import {
   useReactTable,
 } from '@tanstack/react-table'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
 import { type NavigateFn, useTableUrlState } from '@/hooks/use-table-url-state'
 
@@ -24,7 +24,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table'
+} from '@repo/shadcn-ui/table'
 
 import { DataTablePagination, DataTableToolbar } from '@/components/data-table'
 

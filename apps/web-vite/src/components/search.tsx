@@ -1,10 +1,10 @@
-import { SearchIcon } from 'lucide-react'
+import { SearchIcon } from '@repo/shadcn-ui/lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
 import { useSearch } from '@/context/search-provider'
 
-import { Button } from './ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 
 type SearchProps = {
   className?: string

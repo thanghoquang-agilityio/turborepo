@@ -1,10 +1,10 @@
-import { DotsHorizontalIcon } from '@radix-ui/react-icons'
+import { DotsHorizontalIcon } from '@repo/shadcn-ui/icons'
 
 import { type Row } from '@tanstack/react-table'
 
-import { Trash2, UserPen } from 'lucide-react'
+import { Trash2, UserPen } from '@repo/shadcn-ui/lucide-react'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,7 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@repo/shadcn-ui/dropdown-menu'
 
 import { type User } from '../data/schema'
 import { useUsers } from './users-provider'

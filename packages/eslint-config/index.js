@@ -11,6 +11,30 @@ export default function createConfig({ isNext = false, tsconfigRootDir } = {}) {
     {
       extends: [js.configs.recommended, ...tseslint.configs.recommended, ...pluginQuery.configs['flat/recommended']],
       files: ['**/*.{ts,tsx}'],
+      overrides: [
+        {
+          "files": [
+            "config/{jest,webpack}/*.{js,mjs,cjs}"
+          ],
+          "rules": {
+            "import/no-extraneous-dependencies": "off"
+          }
+        },
+        {
+          "files": [
+            "playwright/**/*.js",
+            "playwright.config.js"
+          ],
+          "parserOptions": {
+            "sourceType": "module"
+          },
+          "rules": {
+            "import/no-extraneous-dependencies": "off",
+            "jest/require-hook": "off",
+            "no-await-in-loop": "off"
+          }
+        }
+      ],
       languageOptions: {
         ecmaVersion: 2020,
         globals: isNext ? { ...globals.browser, React: true } : globals.browser,

@@ -1,12 +1,12 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+} from '@repo/shadcn-ui/card'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@repo/shadcn-ui/tabs'
 
 import { ConfigDrawer } from '@/components/config-drawer'
 import { Header } from '@/components/layout/header'

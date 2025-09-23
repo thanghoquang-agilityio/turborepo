@@ -1,15 +1,16 @@
-import { type Content, type Root, type Trigger } from '@radix-ui/react-popover'
+import { CircleQuestionMark } from '@repo/shadcn-ui/lucide-react'
 
-import { CircleQuestionMark } from 'lucide-react'
+import { cn } from '@repo/utils/cn'
 
-import { cn } from '@/lib/utils'
-
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 import {
+  type Content,
+  type Root,
+  type Trigger,
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/components/ui/popover'
+} from '@repo/shadcn-ui/popover'
 
 type LearnMoreProps = React.ComponentProps<typeof Root> & {
   contentProps?: React.ComponentProps<typeof Content>

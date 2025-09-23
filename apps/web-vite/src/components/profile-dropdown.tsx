@@ -1,9 +1,9 @@
 import { Link } from '@tanstack/react-router'
 
-import useDialogState from '@/hooks/use-dialog-state'
+import useDialogState from '@repo/hooks/use-dialog-state'
 
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { Button } from '@/components/ui/button'
+import { Avatar, AvatarFallback, AvatarImage } from '@repo/shadcn-ui/avatar'
+import { Button } from '@repo/shadcn-ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,7 +13,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@repo/shadcn-ui/dropdown-menu'
 
 import { SignOutDialog } from '@/components/sign-out-dialog'
 

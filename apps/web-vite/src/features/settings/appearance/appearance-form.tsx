@@ -2,19 +2,19 @@ import { z } from 'zod'
 
 import { useForm } from 'react-hook-form'
 
-import { ChevronDownIcon } from '@radix-ui/react-icons'
+import { ChevronDownIcon } from '@repo/shadcn-ui/icons'
 
 import { zodResolver } from '@hookform/resolvers/zod'
 
-import { fonts } from '@/config/fonts'
+import { fonts } from '@repo/shadcn-ui/themes/fonts'
 
 import { showSubmittedData } from '@/lib/show-submitted-data'
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
-import { useFont } from '@/context/font-provider'
-import { useTheme } from '@/context/theme-provider'
+import { useFont } from '@repo/shadcn-ui/themes/font-provider'
+import { useTheme } from '@repo/shadcn-ui/themes/theme-provider'
 
-import { Button, buttonVariants } from '@/components/ui/button'
+import { Button, buttonVariants } from '@repo/shadcn-ui/button'
 import {
   Form,
   FormControl,
@@ -23,8 +23,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
+} from '@/components/form'
+import { RadioGroup, RadioGroupItem } from '@repo/shadcn-ui/radio-group'
 
 const appearanceFormSchema = z.object({
   theme: z.enum(['light', 'dark']),

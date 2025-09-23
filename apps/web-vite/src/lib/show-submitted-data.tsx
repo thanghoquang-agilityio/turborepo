@@ -1,4 +1,4 @@
-import { toast } from 'sonner'
+import { toast } from '@repo/shadcn-ui/sonner'
 
 export function showSubmittedData(
   data: unknown,

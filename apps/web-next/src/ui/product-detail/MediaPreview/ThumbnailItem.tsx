@@ -2,7 +2,7 @@ import { memo } from 'react'
 
 // Component
 import { CustomImage } from '@/components'
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 // Constants
 import { API_IMAGE_URL } from '@/constants'
 

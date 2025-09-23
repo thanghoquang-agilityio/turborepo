@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts",
-    "./use-pagination": "./src/use-pagination.ts"
+    "./use-pagination": "./src/use-pagination.ts",
+    "./use-mobile": "./src/use-mobile.ts",
+    "./use-dialog-state": "./src/use-dialog-state.ts"
   },
   "scripts": {
     "build": "tsc",

@@ -6,8 +6,8 @@ import { zodResolver } from '@hookform/resolvers/zod'
 
 import { showSubmittedData } from '@/lib/show-submitted-data'
 
-import { Button } from '@/components/ui/button'
-import { Checkbox } from '@/components/ui/checkbox'
+import { Button } from '@repo/shadcn-ui/button'
+import { Checkbox } from '@repo/shadcn-ui/checkbox'
 import {
   Form,
   FormControl,
@@ -16,7 +16,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
+} from '@/components/form'
 
 const items = [
   {

@@ -2,10 +2,10 @@ import React from 'react'
 
 import { useNavigate } from '@tanstack/react-router'
 
-import { ArrowRight, ChevronRight, Laptop, Moon, Sun } from 'lucide-react'
+import { ArrowRight, ChevronRight, Laptop, Moon, Sun } from '@repo/shadcn-ui/lucide-react'
 
 import { useSearch } from '@/context/search-provider'
-import { useTheme } from '@/context/theme-provider'
+import { useTheme } from '@repo/shadcn-ui/themes/theme-provider'
 
 import {
   CommandDialog,
@@ -15,10 +15,10 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from '@/components/ui/command'
+} from '@repo/shadcn-ui/command'
 
 import { sidebarData } from './layout/data/sidebar-data'
-import { ScrollArea } from './ui/scroll-area'
+import { ScrollArea } from '@repo/shadcn-ui/scroll-area'
 
 export function CommandMenu() {
   const navigate = useNavigate()

@@ -1,18 +1,18 @@
 import { useEffect } from 'react'
 
-import { Check, Moon, Sun } from 'lucide-react'
+import { Check, Moon, Sun } from '@repo/shadcn-ui/lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
-import { useTheme } from '@/context/theme-provider'
+import { useTheme } from '@repo/shadcn-ui/themes/theme-provider'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@repo/shadcn-ui/dropdown-menu'
 
 export function ThemeSwitch() {
   const { theme, setTheme } = useTheme()

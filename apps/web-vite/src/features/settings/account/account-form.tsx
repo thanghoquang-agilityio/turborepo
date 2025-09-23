@@ -2,14 +2,14 @@ import { z } from 'zod'
 
 import { useForm } from 'react-hook-form'
 
-import { CaretSortIcon, CheckIcon } from '@radix-ui/react-icons'
+import { CaretSortIcon, CheckIcon } from '@repo/shadcn-ui/icons'
 
 import { zodResolver } from '@hookform/resolvers/zod'
 
 import { showSubmittedData } from '@/lib/show-submitted-data'
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 import {
   Command,
   CommandEmpty,
@@ -17,7 +17,7 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from '@/components/ui/command'
+} from '@repo/shadcn-ui/command'
 import {
   Form,
   FormControl,
@@ -26,15 +26,13 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
+} from '@/components/form'
+import { Input } from '@repo/shadcn-ui/input'
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/components/ui/popover'
-
-import { DatePicker } from '@/components/date-picker'
+} from '@repo/shadcn-ui/popover'
 
 const languages = [
   { label: 'English', value: 'en' },
@@ -90,20 +88,6 @@ export function AccountForm() {
               <FormDescription>
                 This is the name that will be displayed on your profile and in
                 emails.
-              </FormDescription>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name='dob'
-          render={({ field }) => (
-            <FormItem className='flex flex-col'>
-              <FormLabel>Date of birth</FormLabel>
-              <DatePicker selected={field.value} onSelect={field.onChange} />
-              <FormDescription>
-                Your date of birth is used to calculate your age.
               </FormDescription>
               <FormMessage />
             </FormItem>

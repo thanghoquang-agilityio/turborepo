@@ -7,7 +7,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
+} from '@repo/shadcn-ui/card'
 
 import { AuthLayout } from '../auth-layout'
 import { UserAuthForm } from './components/user-auth-form'

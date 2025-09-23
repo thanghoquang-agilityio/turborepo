@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 
 export function MaintenanceError() {
   return (

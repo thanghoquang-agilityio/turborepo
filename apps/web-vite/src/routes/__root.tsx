@@ -5,7 +5,7 @@ import { Outlet, createRootRouteWithContext } from '@tanstack/react-router'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
-import { Toaster } from '@/components/ui/sonner'
+import { Toaster } from '@repo/shadcn-ui/sonner'
 
 import { NavigationProgress } from '@/components/navigation-progress'
 

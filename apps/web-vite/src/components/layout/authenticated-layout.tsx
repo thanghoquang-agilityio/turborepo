@@ -1,12 +1,12 @@
 import { Outlet } from '@tanstack/react-router'
 
-import { getCookie } from '@/lib/cookies'
-import { cn } from '@/lib/utils'
+import { getCookie } from '@repo/utils/cookies'
+import { cn } from '@repo/utils/cn'
 
-import { LayoutProvider } from '@/context/layout-provider'
+import { LayoutProvider } from '@repo/shadcn-ui/themes/layout-provider'
 import { SearchProvider } from '@/context/search-provider'
 
-import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar'
+import { SidebarInset, SidebarProvider } from '@repo/shadcn-ui/sidebar'
 
 import { AppSidebar } from '@/components/layout/app-sidebar'
 import { SkipToMain } from '@/components/skip-to-main'

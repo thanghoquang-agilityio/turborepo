@@ -2,18 +2,18 @@ import { useEffect, useRef, useState } from 'react'
 
 import { type Table } from '@tanstack/react-table'
 
-import { X } from 'lucide-react'
+import { X } from '@repo/shadcn-ui/lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
+import { Badge } from '@repo/shadcn-ui/badge'
+import { Button } from '@repo/shadcn-ui/button'
+import { Separator } from '@repo/shadcn-ui/separator'
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from '@/components/ui/tooltip'
+} from '@repo/shadcn-ui/tooltip'
 
 type DataTableBulkActionsProps<TData> = {
   table: Table<TData>

@@ -1,17 +1,17 @@
 import { Link } from '@tanstack/react-router'
 
-import { Menu, X } from 'lucide-react'
+import { Menu, X } from '@repo/shadcn-ui/lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from '@/components/ui/sidebar'
+} from '@repo/shadcn-ui/sidebar'
 
-import { Button } from '../ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 
 export function AppTitle() {
   const { setOpenMobile } = useSidebar()

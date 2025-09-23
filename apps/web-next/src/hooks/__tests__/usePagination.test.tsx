@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react'
 
-import { DOTS, usePagination } from '@repo/hooks'
+import { DOTS, usePagination } from '@repo/hooks/use-pagination'
 
 describe('usePagination', () => {
   it('Returns data less than page size', () => {

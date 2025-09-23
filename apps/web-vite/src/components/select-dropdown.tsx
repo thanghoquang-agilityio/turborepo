@@ -1,15 +1,15 @@
-import { Loader } from 'lucide-react'
+import { Loader } from '@repo/shadcn-ui/lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
-import { FormControl } from '@/components/ui/form'
+import { FormControl } from '@/components/form'
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select'
+} from '@repo/shadcn-ui/select'
 
 type SelectDropdownProps = {
   onValueChange?: (value: string) => void

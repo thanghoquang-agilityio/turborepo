@@ -8,8 +8,8 @@ import { Link } from '@tanstack/react-router'
 
 import { showSubmittedData } from '@/lib/show-submitted-data'
 
-import { Button } from '@/components/ui/button'
-import { Checkbox } from '@/components/ui/checkbox'
+import { Button } from '@repo/shadcn-ui/button'
+import { Checkbox } from '@repo/shadcn-ui/checkbox'
 import {
   Form,
   FormControl,
@@ -18,9 +18,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
-import { Switch } from '@/components/ui/switch'
+} from '@/components/form'
+import { RadioGroup, RadioGroupItem } from '@repo/shadcn-ui/radio-group'
+import { Switch } from '@repo/shadcn-ui/switch'
 
 const notificationsFormSchema = z.object({
   type: z.enum(['all', 'mentions', 'none'], {

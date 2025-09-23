@@ -9,8 +9,6 @@ export { SizeRadioGroup } from './size-radio-group'
 export { InView } from './in-view'
 export { Profile } from './profile'
 export { Pagination } from './pagination'
-// Re-export hooks from shared hooks package
-export { usePagination, DOTS } from '@repo/hooks'
 
 // Re-export ALL NextUI components that web-next uses
 export {

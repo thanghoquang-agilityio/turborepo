@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
-import { Separator } from '@/components/ui/separator'
-import { SidebarTrigger } from '@/components/ui/sidebar'
+import { Separator } from '@repo/shadcn-ui/separator'
+import { SidebarTrigger } from '@repo/shadcn-ui/sidebar'
 
 type HeaderProps = React.HTMLAttributes<HTMLElement> & {
   fixed?: boolean

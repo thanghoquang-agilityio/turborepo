@@ -7,11 +7,11 @@ import {
   CreditCard,
   LogOut,
   Sparkles,
-} from 'lucide-react'
+} from '@repo/shadcn-ui/lucide-react'
 
-import useDialogState from '@/hooks/use-dialog-state'
+import useDialogState from '@repo/hooks/use-dialog-state'
 
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@repo/shadcn-ui/avatar'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,13 +20,13 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@repo/shadcn-ui/dropdown-menu'
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from '@/components/ui/sidebar'
+} from '@repo/shadcn-ui/sidebar'
 
 import { SignOutDialog } from '@/components/sign-out-dialog'
 

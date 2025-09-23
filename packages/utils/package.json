@@ -8,7 +8,8 @@
     "./format": "./src/format.ts",
     "./validation": "./src/validation.ts",
     "./api": "./src/api.ts",
-    "./constants": "./src/constants.ts"
+    "./constants": "./src/constants.ts",
+    "./cookies": "./src/cookies.ts"
   },
   "scripts": {
     "build": "tsc",
@@ -24,6 +25,7 @@
     "vitest": "^2.0.0"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "tailwind-merge": "^2.3.0"
   }
 }

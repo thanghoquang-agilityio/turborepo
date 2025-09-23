@@ -42,7 +42,7 @@ export default {
     '^@/context/(.*)$',
     '^@/hooks/(.*)$',
     '^@/components/layouts/(.*)$',
-    '^@/components/ui/(.*)$',
+    '^@repo/shadcn-ui/(.*)$',
     '^@/components/errors/(.*)$',
     '^@/components/(.*)$',
     '^@/features/(.*)$',

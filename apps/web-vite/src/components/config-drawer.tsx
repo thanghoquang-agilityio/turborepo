@@ -1,8 +1,8 @@
 import { type SVGProps } from 'react'
 
-import { Item, Root as Radio } from '@radix-ui/react-radio-group'
+import { Item, Root as Radio } from '@repo/shadcn-ui/radio-group'
 
-import { CircleCheck, RotateCcw, Settings } from 'lucide-react'
+import { CircleCheck, RotateCcw, Settings } from '@repo/shadcn-ui/lucide-react'
 
 import { IconDir } from '@/assets/custom/icon-dir'
 import { IconLayoutCompact } from '@/assets/custom/icon-layout-compact'
@@ -15,13 +15,14 @@ import { IconThemeDark } from '@/assets/custom/icon-theme-dark'
 import { IconThemeLight } from '@/assets/custom/icon-theme-light'
 import { IconThemeSystem } from '@/assets/custom/icon-theme-system'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@repo/utils/cn'
 
 import { useDirection } from '@/context/direction-provider'
-import { type Collapsible, useLayout } from '@/context/layout-provider'
-import { useTheme } from '@/context/theme-provider'
+import { type Collapsible, useLayout } from '@repo/shadcn-ui/themes/layout-provider'
+import { useTheme } from '@repo/shadcn-ui/themes/theme-provider'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
+import { useSidebar } from '@repo/shadcn-ui/sidebar'
 import {
   Sheet,
   SheetContent,
@@ -30,9 +31,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet'
+} from '@repo/shadcn-ui/sheet'
 
-import { useSidebar } from './ui/sidebar'
 
 export function ConfigDrawer() {
   const { setOpen } = useSidebar()

@@ -1,6 +1,6 @@
-import { MailPlus, UserPlus } from 'lucide-react'
+import { MailPlus, UserPlus } from '@repo/shadcn-ui/lucide-react'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 
 import { useUsers } from './users-provider'
 

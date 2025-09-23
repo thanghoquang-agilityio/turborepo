@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-import { getCookie, removeCookie, setCookie } from '@/lib/cookies'
+import { getCookie, removeCookie, setCookie } from '@repo/utils/cookies'
 
 const ACCESS_TOKEN = 'thisisjustarandomstring'
 

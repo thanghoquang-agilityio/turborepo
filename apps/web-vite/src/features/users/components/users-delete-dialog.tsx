@@ -2,13 +2,13 @@
 
 import { useState } from 'react'
 
-import { AlertTriangle } from 'lucide-react'
+import { AlertTriangle } from '@repo/shadcn-ui/lucide-react'
 
 import { showSubmittedData } from '@/lib/show-submitted-data'
 
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { Alert, AlertDescription, AlertTitle } from '@repo/shadcn-ui/alert'
+import { Input } from '@repo/shadcn-ui/input'
+import { Label } from '@repo/shadcn-ui/label'
 
 import { ConfirmDialog } from '@/components/confirm-dialog'
 

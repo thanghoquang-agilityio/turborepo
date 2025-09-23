@@ -12,19 +12,19 @@ import {
 
 import { RouterProvider, createRouter } from '@tanstack/react-router'
 
-import { toast } from 'sonner'
+import { toast } from '@repo/shadcn-ui/sonner'
 
 import { useAuthStore } from '@/stores/auth-store'
 
 import { handleServerError } from '@/lib/handle-server-error'
 
 import { DirectionProvider } from './context/direction-provider'
-import { FontProvider } from './context/font-provider'
-import { ThemeProvider } from './context/theme-provider'
+import { FontProvider } from '@repo/shadcn-ui/themes/font-provider'
+import { ThemeProvider } from '@repo/shadcn-ui/themes/theme-provider'
 // Generated Routes
 import { routeTree } from './routeTree.gen'
 // Styles
-import './styles/index.css'
+import '@repo/shadcn-ui/styles'
 
 const queryClient = new QueryClient({
   defaultOptions: {

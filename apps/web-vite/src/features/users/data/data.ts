@@ -1,4 +1,4 @@
-import { CreditCard, Shield, UserCheck, Users } from 'lucide-react'
+import { CreditCard, Shield, UserCheck, Users } from '@repo/shadcn-ui/lucide-react'
 
 import { type UserStatus } from './schema'
 

@@ -2,17 +2,17 @@ import { useState } from 'react'
 
 import { type Table } from '@tanstack/react-table'
 
-import { Mail, Trash2, UserCheck, UserX } from 'lucide-react'
-import { toast } from 'sonner'
+import { Mail, Trash2, UserCheck, UserX } from '@repo/shadcn-ui/lucide-react'
+import { toast } from '@repo/shadcn-ui/sonner'
 
 import { sleep } from '@/lib/utils'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@repo/shadcn-ui/button'
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from '@/components/ui/tooltip'
+} from '@repo/shadcn-ui/tooltip'
 
 import { DataTableBulkActions as BulkActionsToolbar } from '@/components/data-table'
 
