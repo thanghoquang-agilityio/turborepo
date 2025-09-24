@@ -1,4 +1,4 @@
-import { CartItemModel, ImageModel } from '@/types'
+import { type CartItemModel, type ImageModel } from '@/types'
 
 type CartItems = Omit<CartItemModel, 'productVariantId'> & {
   id: number

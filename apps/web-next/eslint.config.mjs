@@ -4,7 +4,6 @@ import { dirname } from 'node:path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
-export default createConfig({ 
-  isNext: true, 
-  tsconfigRootDir: __dirname 
-})
+export default createConfig({ isNext: true, tsconfigRootDir: __dirname })
+
+

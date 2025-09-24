@@ -1,4 +1,4 @@
-import { ProductVariantModel } from '@/types'
+import { type ProductVariantModel } from '@/types'
 
 export const getSizeVariants = (
   data: ProductVariantModel[],

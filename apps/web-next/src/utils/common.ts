@@ -1,5 +1,5 @@
 import { API_IMAGE_URL, STAR_DEFAULT } from '@/constants'
-import { ImageExtension } from '@/types/image'
+import { type ImageExtension } from '@/types/image'
 
 export const getStars = (value: number): number[] => {
   const stars: number[] = []

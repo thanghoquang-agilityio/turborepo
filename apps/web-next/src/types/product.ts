@@ -1,6 +1,6 @@
 import {
-  ImageModel,
-  MetaResponse,
+  type ImageModel,
+  type MetaResponse,
 } from '@/types'
 
 export interface ProductVariantModel {

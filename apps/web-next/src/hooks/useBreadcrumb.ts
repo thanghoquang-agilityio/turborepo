@@ -1,6 +1,6 @@
 import { usePathname } from 'next/navigation'
 
-import { BreadcrumbItem } from '@/components'
+import { type BreadcrumbItem } from '@/components'
 import { PRODUCT_LIST_REGEX, ROUTER } from '@/constants'
 
 export const useBreadcrumb = () => {

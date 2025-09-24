@@ -3,7 +3,7 @@ import { API_ENDPOINT } from '@/constants/api-endpoint'
 // Services
 import { apiClient } from '@/services'
 // Models
-import { CategoriesDataResponse, CategoriesResponse } from '@/types'
+import { type CategoriesDataResponse, type CategoriesResponse } from '@/types'
 
 export const getCategoryList = async (): CategoriesDataResponse => {
   try {

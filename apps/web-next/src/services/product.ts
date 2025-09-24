@@ -4,10 +4,10 @@ import { API_ENDPOINT } from '@/constants'
 import { apiClient } from '@/services'
 // Types
 import {
-  APIRelatedResponse,
-  ProductModel,
-  ProductsDataResponse,
-  ProductsResponse,
+  type APIRelatedResponse,
+  type ProductModel,
+  type ProductsDataResponse,
+  type ProductsResponse,
 } from '@/types'
 
 interface FetchDataProps {

@@ -1,12 +1,12 @@
-import { ReactNode } from 'react'
+import { type ReactNode } from 'react'
 
 import { act, fireEvent, render, waitFor } from '@testing-library/react'
 
-import { ToastColor } from '@/components'
+import { type ToastColor } from '@/components'
 
 import {
   TOAST_TYPE,
-  TWithToast,
+  type TWithToast,
   buildToastRenderer,
   withToast,
 } from '../withToast'

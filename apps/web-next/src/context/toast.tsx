@@ -1,8 +1,8 @@
 'use client'
 
-import { ReactNode, createContext, useContext, useMemo } from 'react'
+import { type ReactNode, createContext, useContext, useMemo } from 'react'
 
-import { TWithToast, ToastProps, withToast } from '@/hocs/withToast'
+import { type TWithToast, type ToastProps, withToast } from '@/hocs/withToast'
 
 interface IToastContext {
   openToast: (toast: ToastProps, callback?: () => void) => void

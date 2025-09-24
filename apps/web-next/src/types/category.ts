@@ -1,4 +1,4 @@
-import { ProductModel} from '@/types'
+import { type ProductModel} from '@/types'
 
 export interface CategoryModel {
   name: string

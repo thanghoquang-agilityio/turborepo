@@ -1,4 +1,4 @@
-import { CustomClassType } from '@/types/components'
+import { type CustomClassType } from '@/types/components'
 
 export const MinusIcon = ({
   customClass = 'w-full h-full',

@@ -11,10 +11,10 @@ import {
 import { getCategoryList, getProducts } from '@/services'
 // Types
 import {
-  CategoryResponse,
-  FilterItem,
-  SearchParams,
-  StringFilter,
+  type CategoryResponse,
+  type FilterItem,
+  type SearchParams,
+  type StringFilter,
 } from '@/types'
 
 // Components

@@ -1,4 +1,4 @@
-import { ProductVariantModel } from '@/types'
+import { type ProductVariantModel } from '@/types'
 
 import { MOCK_IMAGE } from './image'
 

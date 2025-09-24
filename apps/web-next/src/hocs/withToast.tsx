@@ -1,8 +1,8 @@
 'use client'
 
-import React, { ReactNode, useState } from 'react'
+import React, { type ReactNode, useState } from 'react'
 
-import { Toast, ToastColor } from '@/components'
+import { Toast, type ToastColor } from '@/components'
 
 export enum TOAST_TYPE {
   SUCCESS = 'success',

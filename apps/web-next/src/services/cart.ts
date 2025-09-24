@@ -6,10 +6,10 @@ import { API_ENDPOINT } from '@/constants'
 import { apiClient } from '@/services'
 // Models
 import {
-  CartItemPayload,
-  CartItemResponse,
-  CartItemsDataResponse,
-  CartItemsResponse,
+  type CartItemPayload,
+  type CartItemResponse,
+  type CartItemsDataResponse,
+  type CartItemsResponse,
 } from '@/types'
 // Utils
 import { getOverStock } from '@/utils'
