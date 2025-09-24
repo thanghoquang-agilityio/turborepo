@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "tailwind": {
+    "$schema": "https://unpkg.com/tailwindcss@4.1.13/schema.json",
+    "content": [
+      "./src/**/*.{js,ts,jsx,tsx}",
+      "./src/styles/*.{css}"
+    ]
+  },
   "exports": {
     "./alert-dialog": "./src/alert-dialog.tsx",
     "./alert": "./src/alert.tsx",
@@ -46,21 +53,34 @@
     "build": "tsc",
     "type-check": "tsc --noEmit",
     "lint": "eslint src/",
-    "clean": "rm -rf dist .turbo node_modules/.cache"
+    "clean": "rm -rf dist .turbo node_modules/.cache",
+    "storybook": "storybook dev -p 7007",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/tsconfig": "workspace:*"
+    "@repo/tsconfig": "workspace:*",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "storybook": "^8.6.14",
+    "@tailwindcss/postcss": "^4.1.13",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^4.1.13",
+    "vite": "^6.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "dependencies": {
     "cmdk": "1.1.1",
     "lucide-react": "^0.544.0",
     "sonner": "^2.0.7",
-    "tailwindcss": "^4.1.13",
     "tw-animate-css": "^1.3.8",
     "class-variance-authority": "^0.7.1",
     "@radix-ui/react-alert-dialog": "^1.1.15",

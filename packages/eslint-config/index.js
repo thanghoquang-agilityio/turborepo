@@ -3,6 +3,7 @@ import js from '@eslint/js'
 import pluginQuery from '@tanstack/eslint-plugin-query'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import nextPlugin from '@next/eslint-plugin-next'
 import tseslint from 'typescript-eslint'
 
 export default function createConfig({ isNext = false, tsconfigRootDir } = {}) {
@@ -11,30 +12,6 @@ export default function createConfig({ isNext = false, tsconfigRootDir } = {}) {
     {
       extends: [js.configs.recommended, ...tseslint.configs.recommended, ...pluginQuery.configs['flat/recommended']],
       files: ['**/*.{ts,tsx}'],
-      overrides: [
-        {
-          "files": [
-            "config/{jest,webpack}/*.{js,mjs,cjs}"
-          ],
-          "rules": {
-            "import/no-extraneous-dependencies": "off"
-          }
-        },
-        {
-          "files": [
-            "playwright/**/*.js",
-            "playwright.config.js"
-          ],
-          "parserOptions": {
-            "sourceType": "module"
-          },
-          "rules": {
-            "import/no-extraneous-dependencies": "off",
-            "jest/require-hook": "off",
-            "no-await-in-loop": "off"
-          }
-        }
-      ],
       languageOptions: {
         ecmaVersion: 2020,
         globals: isNext ? { ...globals.browser, React: true } : globals.browser,
@@ -48,10 +25,13 @@ export default function createConfig({ isNext = false, tsconfigRootDir } = {}) {
       plugins: {
         'react-hooks': reactHooks,
         'react-refresh': reactRefresh,
+        '@next/next': nextPlugin,
       },
       rules: {
         ...reactHooks.configs.recommended.rules,
-        'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+        'react-refresh/only-export-components': 'off',
+        // Next.js rules
+        '@next/next/no-img-element': 'off',
         'no-console': 'error',
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': [
@@ -66,8 +46,15 @@ export default function createConfig({ isNext = false, tsconfigRootDir } = {}) {
             ignoreRestSiblings: true,
           },
         ],
-        '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports', fixStyle: 'inline-type-imports', disallowTypeAnnotations: false }],
+        '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports', fixStyle: 'inline-type-imports', disallowTypeAnnotations: false }],
         'no-duplicate-imports': 'error',
+      },
+    },
+    // Allow require() usage in config and test contexts
+    {
+      files: ['**/jest.config.{js,ts}', '**/*.test.{ts,tsx}'],
+      rules: {
+        '@typescript-eslint/no-require-imports': 'off',
       },
     },
   )
